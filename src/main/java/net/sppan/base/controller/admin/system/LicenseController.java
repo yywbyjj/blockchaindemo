@@ -6,6 +6,7 @@ import net.sppan.base.controller.BaseController;
 import net.sppan.base.entity.License;
 import net.sppan.base.entity.User;
 import net.sppan.base.entity.enu.LicenseCheckCode;
+import net.sppan.base.service.IUserService;
 import net.sppan.base.service.LicenseService;
 import net.sppan.base.service.specification.SimpleSpecificationBuilder;
 import net.sppan.base.service.specification.SpecificationOperator;
@@ -27,6 +28,9 @@ public class LicenseController extends BaseController {
     @Autowired
     private LicenseService licenseService;
 
+    @Autowired
+    private IUserService userService;
+
     @RequestMapping(value = { "/", "/index" })
     public String index() {
         return "admin/license/index";
@@ -47,7 +51,10 @@ public class LicenseController extends BaseController {
     @GetMapping(value = "/check/{id}")
     public String checkLicense(@PathVariable String id, ModelMap map){
         License license = licenseService.find(id);
+        String userId = license.getUserId();
+        User user = userService.find(userId);
         map.put("license",license);
+        map.put("user",user);
         return "admin/license/form";
     }
 

@@ -25,19 +25,7 @@
             <div class="col-sm-12">
                 <div class="ibox float-e-margins">
                     <div class="ibox-title">
-                        <h5>jQuery Validate 简介</h5>
-                    </div>
-                    <div class="ibox-content">
-                        <p>jquery.validate.js 是一款优秀的jQuery表单验证插件。它具有如下特点：</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="ibox float-e-margins">
-                    <div class="ibox-title">
-                        <h5>完整验证表单</h5>
+                        <h5>业务审核</h5>
                     </div>
                     <div class="ibox-content">
                         <form class="form-horizontal m-t" id="frm" method="post" action="${ctx!}/admin/license/checking">
@@ -49,7 +37,46 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <img src="${ctx!}/assets/img/1.png" width="750" height="600">
+                                <label class="col-sm-3 control-label">昵称：</label>
+                                <div class="col-sm-8">
+                                    <input id="nickName" name="nickName" class="form-control" type="text" value="${user.nickName}" readonly="readonly">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">性别：</label>
+                                <div class="col-sm-8">
+                                    <input id="sex" name="sex" class="form-control" type="text"
+                                           <#if user.sex == 0>value="女"</#if>
+                                           <#if user.sex == 1>value="男"</#if> readonly="readonly">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">出生日期：</label>
+                                <div class="col-sm-8">
+                                    <input id="birthday" name="birthday" readonly="readonly" class="form-control" value="${user.birthday}">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">电话：</label>
+                                <div class="col-sm-8">
+                                    <input id="telephone" name="telephone" class="form-control" value="${user.telephone}" readonly="readonly">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">E-mail：</label>
+                                <div class="col-sm-8">
+                                    <input id="email" name="email" class="form-control" value="${user.email}" readonly="readonly">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">地址：</label>
+                                <div class="col-sm-8">
+                                    <input id="address" name="address" class="form-control" value="${user.address}" readonly="readonly">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">用户凭证：</label>
+                                <a href="${ctx!}/assets/img/1.png" target="_blank">用户凭证一</a>
                             </div>
                             <div class="form-group">
                                 <div class="col-sm-8 col-sm-offset-3">

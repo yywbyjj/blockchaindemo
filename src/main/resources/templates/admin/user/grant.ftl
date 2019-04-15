@@ -92,7 +92,7 @@
     	    	$.ajax({
    	    		   type: "POST",
    	    		   dataType: "json",
-   	    		   url: "${ctx!}/admin/user/grant/23822549537902357391704957349112",
+   	    		   url: "${ctx!}/admin/user/grant/"+"${user.id}",
    	    		   data: $(form).serialize(),
    	    		   success: function(msg){
 	   	    			layer.msg(msg.message, {time: 2000},function(){

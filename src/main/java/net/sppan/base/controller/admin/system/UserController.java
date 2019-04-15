@@ -111,7 +111,6 @@ public class UserController extends BaseController {
 	@ResponseBody
 	@RequestMapping(value = "/grant/{id}", method = RequestMethod.POST)
 	public JsonResult grant(@PathVariable String id,String[] roleIds, ModelMap map) {
-		System.out.println(id);
 		try {
 			userService.grant(id,roleIds);
 		} catch (Exception e) {
