@@ -1,0 +1,517 @@
+2019-03-29 15:13:49.877 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+2019-03-29 15:13:49.887 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+2019-03-29 15:13:49.888 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}->hhttp://193.112.47.47:3000][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2019-03-29 15:13:49.898 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {}->hhttp://193.112.47.47:3000][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2019-03-29 15:13:49.900 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {}->hhttp://193.112.47.47:3000
+2019-03-29 15:13:49.901 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: Shutdown connection
+2019-03-29 15:13:49.901 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection discarded
+2019-03-29 15:13:49.901 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {}->hhttp://193.112.47.47:3000][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2019-03-29 15:13:49.901 [main] INFO  org.apache.http.impl.execchain.RetryExec - I/O exception (org.apache.http.conn.UnsupportedSchemeException) caught when processing request to {}->hhttp://193.112.47.47:3000: hhttp protocol is not supported
+2019-03-29 15:13:49.903 [main] DEBUG org.apache.http.impl.execchain.RetryExec - hhttp protocol is not supported
+org.apache.http.conn.UnsupportedSchemeException: hhttp protocol is not supported
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:109)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at net.sppan.base.common.utils.HttpClientUtils.getHttpClientResult(HttpClientUtils.java:315)
+	at net.sppan.base.common.utils.HttpClientUtils.doGet(HttpClientUtils.java:112)
+	at net.sppan.base.common.utils.HttpClientUtils.doGet(HttpClientUtils.java:56)
+	at net.sppan.base.service.impl.UserServiceImpl.main(UserServiceImpl.java:123)
+2019-03-29 15:13:49.903 [main] INFO  org.apache.http.impl.execchain.RetryExec - Retrying request to {}->hhttp://193.112.47.47:3000
+2019-03-29 15:13:49.903 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+2019-03-29 15:13:49.904 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+2019-03-29 15:13:49.904 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}->hhttp://193.112.47.47:3000][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2019-03-29 15:13:49.904 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 1][route: {}->hhttp://193.112.47.47:3000][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2019-03-29 15:13:49.904 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {}->hhttp://193.112.47.47:3000
+2019-03-29 15:13:49.904 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-1: Shutdown connection
+2019-03-29 15:13:49.904 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection discarded
+2019-03-29 15:13:49.904 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 1][route: {}->hhttp://193.112.47.47:3000][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2019-03-29 15:13:49.904 [main] INFO  org.apache.http.impl.execchain.RetryExec - I/O exception (org.apache.http.conn.UnsupportedSchemeException) caught when processing request to {}->hhttp://193.112.47.47:3000: hhttp protocol is not supported
+2019-03-29 15:13:49.904 [main] DEBUG org.apache.http.impl.execchain.RetryExec - hhttp protocol is not supported
+org.apache.http.conn.UnsupportedSchemeException: hhttp protocol is not supported
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:109)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at net.sppan.base.common.utils.HttpClientUtils.getHttpClientResult(HttpClientUtils.java:315)
+	at net.sppan.base.common.utils.HttpClientUtils.doGet(HttpClientUtils.java:112)
+	at net.sppan.base.common.utils.HttpClientUtils.doGet(HttpClientUtils.java:56)
+	at net.sppan.base.service.impl.UserServiceImpl.main(UserServiceImpl.java:123)
+2019-03-29 15:13:49.904 [main] INFO  org.apache.http.impl.execchain.RetryExec - Retrying request to {}->hhttp://193.112.47.47:3000
+2019-03-29 15:13:49.904 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+2019-03-29 15:13:49.904 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+2019-03-29 15:13:49.904 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}->hhttp://193.112.47.47:3000][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2019-03-29 15:13:49.905 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 2][route: {}->hhttp://193.112.47.47:3000][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2019-03-29 15:13:49.905 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {}->hhttp://193.112.47.47:3000
+2019-03-29 15:13:49.905 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-2: Shutdown connection
+2019-03-29 15:13:49.905 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection discarded
+2019-03-29 15:13:49.905 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 2][route: {}->hhttp://193.112.47.47:3000][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2019-03-29 15:13:49.905 [main] INFO  org.apache.http.impl.execchain.RetryExec - I/O exception (org.apache.http.conn.UnsupportedSchemeException) caught when processing request to {}->hhttp://193.112.47.47:3000: hhttp protocol is not supported
+2019-03-29 15:13:49.905 [main] DEBUG org.apache.http.impl.execchain.RetryExec - hhttp protocol is not supported
+org.apache.http.conn.UnsupportedSchemeException: hhttp protocol is not supported
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:109)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at net.sppan.base.common.utils.HttpClientUtils.getHttpClientResult(HttpClientUtils.java:315)
+	at net.sppan.base.common.utils.HttpClientUtils.doGet(HttpClientUtils.java:112)
+	at net.sppan.base.common.utils.HttpClientUtils.doGet(HttpClientUtils.java:56)
+	at net.sppan.base.service.impl.UserServiceImpl.main(UserServiceImpl.java:123)
+2019-03-29 15:13:49.905 [main] INFO  org.apache.http.impl.execchain.RetryExec - Retrying request to {}->hhttp://193.112.47.47:3000
+2019-03-29 15:13:49.905 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+2019-03-29 15:13:49.905 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+2019-03-29 15:13:49.905 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}->hhttp://193.112.47.47:3000][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2019-03-29 15:13:49.905 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 3][route: {}->hhttp://193.112.47.47:3000][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2019-03-29 15:13:49.905 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {}->hhttp://193.112.47.47:3000
+2019-03-29 15:13:49.905 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-3: Shutdown connection
+2019-03-29 15:13:49.905 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection discarded
+2019-03-29 15:13:49.905 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 3][route: {}->hhttp://193.112.47.47:3000][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2019-03-29 15:13:49.906 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager is shutting down
+2019-03-29 15:13:49.906 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager shut down
+2019-03-29 15:14:29.756 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+2019-03-29 15:14:29.765 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+2019-03-29 15:14:29.766 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}->hhttp://193.112.47.47:3000][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2019-03-29 15:14:29.777 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {}->hhttp://193.112.47.47:3000][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2019-03-29 15:14:29.779 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {}->hhttp://193.112.47.47:3000
+2019-03-29 15:14:29.780 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: Shutdown connection
+2019-03-29 15:14:29.780 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection discarded
+2019-03-29 15:14:29.780 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {}->hhttp://193.112.47.47:3000][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2019-03-29 15:14:29.781 [main] INFO  org.apache.http.impl.execchain.RetryExec - I/O exception (org.apache.http.conn.UnsupportedSchemeException) caught when processing request to {}->hhttp://193.112.47.47:3000: hhttp protocol is not supported
+2019-03-29 15:14:29.784 [main] DEBUG org.apache.http.impl.execchain.RetryExec - hhttp protocol is not supported
+org.apache.http.conn.UnsupportedSchemeException: hhttp protocol is not supported
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:109)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at net.sppan.base.common.utils.HttpClientUtils.getHttpClientResult(HttpClientUtils.java:315)
+	at net.sppan.base.common.utils.HttpClientUtils.doGet(HttpClientUtils.java:112)
+	at net.sppan.base.common.utils.HttpClientUtils.doGet(HttpClientUtils.java:56)
+	at net.sppan.base.controller.admin.system.UserController.main(UserController.java:122)
+2019-03-29 15:14:29.785 [main] INFO  org.apache.http.impl.execchain.RetryExec - Retrying request to {}->hhttp://193.112.47.47:3000
+2019-03-29 15:14:29.785 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+2019-03-29 15:14:29.785 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+2019-03-29 15:14:29.785 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}->hhttp://193.112.47.47:3000][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2019-03-29 15:14:29.786 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 1][route: {}->hhttp://193.112.47.47:3000][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2019-03-29 15:14:29.786 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {}->hhttp://193.112.47.47:3000
+2019-03-29 15:14:29.786 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-1: Shutdown connection
+2019-03-29 15:14:29.786 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection discarded
+2019-03-29 15:14:29.786 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 1][route: {}->hhttp://193.112.47.47:3000][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2019-03-29 15:14:29.786 [main] INFO  org.apache.http.impl.execchain.RetryExec - I/O exception (org.apache.http.conn.UnsupportedSchemeException) caught when processing request to {}->hhttp://193.112.47.47:3000: hhttp protocol is not supported
+2019-03-29 15:14:29.786 [main] DEBUG org.apache.http.impl.execchain.RetryExec - hhttp protocol is not supported
+org.apache.http.conn.UnsupportedSchemeException: hhttp protocol is not supported
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:109)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at net.sppan.base.common.utils.HttpClientUtils.getHttpClientResult(HttpClientUtils.java:315)
+	at net.sppan.base.common.utils.HttpClientUtils.doGet(HttpClientUtils.java:112)
+	at net.sppan.base.common.utils.HttpClientUtils.doGet(HttpClientUtils.java:56)
+	at net.sppan.base.controller.admin.system.UserController.main(UserController.java:122)
+2019-03-29 15:14:29.786 [main] INFO  org.apache.http.impl.execchain.RetryExec - Retrying request to {}->hhttp://193.112.47.47:3000
+2019-03-29 15:14:29.787 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+2019-03-29 15:14:29.787 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+2019-03-29 15:14:29.787 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}->hhttp://193.112.47.47:3000][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2019-03-29 15:14:29.787 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 2][route: {}->hhttp://193.112.47.47:3000][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2019-03-29 15:14:29.787 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {}->hhttp://193.112.47.47:3000
+2019-03-29 15:14:29.787 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-2: Shutdown connection
+2019-03-29 15:14:29.787 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection discarded
+2019-03-29 15:14:29.787 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 2][route: {}->hhttp://193.112.47.47:3000][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2019-03-29 15:14:29.787 [main] INFO  org.apache.http.impl.execchain.RetryExec - I/O exception (org.apache.http.conn.UnsupportedSchemeException) caught when processing request to {}->hhttp://193.112.47.47:3000: hhttp protocol is not supported
+2019-03-29 15:14:29.788 [main] DEBUG org.apache.http.impl.execchain.RetryExec - hhttp protocol is not supported
+org.apache.http.conn.UnsupportedSchemeException: hhttp protocol is not supported
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:109)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at net.sppan.base.common.utils.HttpClientUtils.getHttpClientResult(HttpClientUtils.java:315)
+	at net.sppan.base.common.utils.HttpClientUtils.doGet(HttpClientUtils.java:112)
+	at net.sppan.base.common.utils.HttpClientUtils.doGet(HttpClientUtils.java:56)
+	at net.sppan.base.controller.admin.system.UserController.main(UserController.java:122)
+2019-03-29 15:14:29.788 [main] INFO  org.apache.http.impl.execchain.RetryExec - Retrying request to {}->hhttp://193.112.47.47:3000
+2019-03-29 15:14:29.788 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+2019-03-29 15:14:29.788 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+2019-03-29 15:14:29.788 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}->hhttp://193.112.47.47:3000][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2019-03-29 15:14:29.788 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 3][route: {}->hhttp://193.112.47.47:3000][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2019-03-29 15:14:29.788 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {}->hhttp://193.112.47.47:3000
+2019-03-29 15:14:29.789 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-3: Shutdown connection
+2019-03-29 15:14:29.789 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection discarded
+2019-03-29 15:14:29.789 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 3][route: {}->hhttp://193.112.47.47:3000][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2019-03-29 15:14:29.789 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager is shutting down
+2019-03-29 15:14:29.789 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager shut down
+2019-03-29 15:15:20.885 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+2019-03-29 15:15:20.895 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+2019-03-29 15:15:20.896 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}->hhttp://193.112.47.47:3000][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2019-03-29 15:15:20.906 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {}->hhttp://193.112.47.47:3000][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2019-03-29 15:15:20.907 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {}->hhttp://193.112.47.47:3000
+2019-03-29 15:15:20.909 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: Shutdown connection
+2019-03-29 15:15:20.909 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection discarded
+2019-03-29 15:15:20.909 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {}->hhttp://193.112.47.47:3000][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2019-03-29 15:15:20.909 [main] INFO  org.apache.http.impl.execchain.RetryExec - I/O exception (org.apache.http.conn.UnsupportedSchemeException) caught when processing request to {}->hhttp://193.112.47.47:3000: hhttp protocol is not supported
+2019-03-29 15:15:20.911 [main] DEBUG org.apache.http.impl.execchain.RetryExec - hhttp protocol is not supported
+org.apache.http.conn.UnsupportedSchemeException: hhttp protocol is not supported
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:109)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at net.sppan.base.common.utils.HttpClientUtils.getHttpClientResult(HttpClientUtils.java:315)
+	at net.sppan.base.common.utils.HttpClientUtils.doGet(HttpClientUtils.java:112)
+	at net.sppan.base.common.utils.HttpClientUtils.doGet(HttpClientUtils.java:56)
+	at net.sppan.base.controller.admin.system.UserController.main(UserController.java:123)
+2019-03-29 15:15:20.912 [main] INFO  org.apache.http.impl.execchain.RetryExec - Retrying request to {}->hhttp://193.112.47.47:3000
+2019-03-29 15:15:20.912 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+2019-03-29 15:15:20.912 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+2019-03-29 15:15:20.912 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}->hhttp://193.112.47.47:3000][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2019-03-29 15:15:20.912 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 1][route: {}->hhttp://193.112.47.47:3000][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2019-03-29 15:15:20.912 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {}->hhttp://193.112.47.47:3000
+2019-03-29 15:15:20.912 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-1: Shutdown connection
+2019-03-29 15:15:20.912 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection discarded
+2019-03-29 15:15:20.912 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 1][route: {}->hhttp://193.112.47.47:3000][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2019-03-29 15:15:20.912 [main] INFO  org.apache.http.impl.execchain.RetryExec - I/O exception (org.apache.http.conn.UnsupportedSchemeException) caught when processing request to {}->hhttp://193.112.47.47:3000: hhttp protocol is not supported
+2019-03-29 15:15:20.912 [main] DEBUG org.apache.http.impl.execchain.RetryExec - hhttp protocol is not supported
+org.apache.http.conn.UnsupportedSchemeException: hhttp protocol is not supported
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:109)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at net.sppan.base.common.utils.HttpClientUtils.getHttpClientResult(HttpClientUtils.java:315)
+	at net.sppan.base.common.utils.HttpClientUtils.doGet(HttpClientUtils.java:112)
+	at net.sppan.base.common.utils.HttpClientUtils.doGet(HttpClientUtils.java:56)
+	at net.sppan.base.controller.admin.system.UserController.main(UserController.java:123)
+2019-03-29 15:15:20.912 [main] INFO  org.apache.http.impl.execchain.RetryExec - Retrying request to {}->hhttp://193.112.47.47:3000
+2019-03-29 15:15:20.912 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+2019-03-29 15:15:20.913 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+2019-03-29 15:15:20.913 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}->hhttp://193.112.47.47:3000][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2019-03-29 15:15:20.913 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 2][route: {}->hhttp://193.112.47.47:3000][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2019-03-29 15:15:20.913 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {}->hhttp://193.112.47.47:3000
+2019-03-29 15:15:20.913 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-2: Shutdown connection
+2019-03-29 15:15:20.913 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection discarded
+2019-03-29 15:15:20.913 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 2][route: {}->hhttp://193.112.47.47:3000][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2019-03-29 15:15:20.913 [main] INFO  org.apache.http.impl.execchain.RetryExec - I/O exception (org.apache.http.conn.UnsupportedSchemeException) caught when processing request to {}->hhttp://193.112.47.47:3000: hhttp protocol is not supported
+2019-03-29 15:15:20.913 [main] DEBUG org.apache.http.impl.execchain.RetryExec - hhttp protocol is not supported
+org.apache.http.conn.UnsupportedSchemeException: hhttp protocol is not supported
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:109)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at net.sppan.base.common.utils.HttpClientUtils.getHttpClientResult(HttpClientUtils.java:315)
+	at net.sppan.base.common.utils.HttpClientUtils.doGet(HttpClientUtils.java:112)
+	at net.sppan.base.common.utils.HttpClientUtils.doGet(HttpClientUtils.java:56)
+	at net.sppan.base.controller.admin.system.UserController.main(UserController.java:123)
+2019-03-29 15:15:20.913 [main] INFO  org.apache.http.impl.execchain.RetryExec - Retrying request to {}->hhttp://193.112.47.47:3000
+2019-03-29 15:15:20.913 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+2019-03-29 15:15:20.913 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+2019-03-29 15:15:20.913 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}->hhttp://193.112.47.47:3000][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2019-03-29 15:15:20.914 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 3][route: {}->hhttp://193.112.47.47:3000][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2019-03-29 15:15:20.914 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {}->hhttp://193.112.47.47:3000
+2019-03-29 15:15:20.914 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-3: Shutdown connection
+2019-03-29 15:15:20.914 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection discarded
+2019-03-29 15:15:20.914 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 3][route: {}->hhttp://193.112.47.47:3000][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2019-03-29 15:15:20.914 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager is shutting down
+2019-03-29 15:15:20.914 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager shut down
+2019-03-29 15:15:26.969 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+2019-03-29 15:15:26.982 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+2019-03-29 15:15:26.983 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}->hhttp://193.112.47.47:3000][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2019-03-29 15:15:26.996 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {}->hhttp://193.112.47.47:3000][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2019-03-29 15:15:26.997 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {}->hhttp://193.112.47.47:3000
+2019-03-29 15:15:26.999 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: Shutdown connection
+2019-03-29 15:15:27.000 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection discarded
+2019-03-29 15:15:27.000 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {}->hhttp://193.112.47.47:3000][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2019-03-29 15:15:27.000 [main] INFO  org.apache.http.impl.execchain.RetryExec - I/O exception (org.apache.http.conn.UnsupportedSchemeException) caught when processing request to {}->hhttp://193.112.47.47:3000: hhttp protocol is not supported
+2019-03-29 15:15:27.003 [main] DEBUG org.apache.http.impl.execchain.RetryExec - hhttp protocol is not supported
+org.apache.http.conn.UnsupportedSchemeException: hhttp protocol is not supported
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:109)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at net.sppan.base.common.utils.HttpClientUtils.getHttpClientResult(HttpClientUtils.java:315)
+	at net.sppan.base.common.utils.HttpClientUtils.doGet(HttpClientUtils.java:112)
+	at net.sppan.base.common.utils.HttpClientUtils.doGet(HttpClientUtils.java:56)
+	at net.sppan.base.controller.admin.system.UserController.main(UserController.java:123)
+2019-03-29 15:15:27.004 [main] INFO  org.apache.http.impl.execchain.RetryExec - Retrying request to {}->hhttp://193.112.47.47:3000
+2019-03-29 15:15:27.004 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+2019-03-29 15:15:27.004 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+2019-03-29 15:15:27.004 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}->hhttp://193.112.47.47:3000][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2019-03-29 15:15:27.005 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 1][route: {}->hhttp://193.112.47.47:3000][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2019-03-29 15:15:27.005 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {}->hhttp://193.112.47.47:3000
+2019-03-29 15:15:27.005 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-1: Shutdown connection
+2019-03-29 15:15:27.005 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection discarded
+2019-03-29 15:15:27.005 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 1][route: {}->hhttp://193.112.47.47:3000][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2019-03-29 15:15:27.005 [main] INFO  org.apache.http.impl.execchain.RetryExec - I/O exception (org.apache.http.conn.UnsupportedSchemeException) caught when processing request to {}->hhttp://193.112.47.47:3000: hhttp protocol is not supported
+2019-03-29 15:15:27.005 [main] DEBUG org.apache.http.impl.execchain.RetryExec - hhttp protocol is not supported
+org.apache.http.conn.UnsupportedSchemeException: hhttp protocol is not supported
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:109)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at net.sppan.base.common.utils.HttpClientUtils.getHttpClientResult(HttpClientUtils.java:315)
+	at net.sppan.base.common.utils.HttpClientUtils.doGet(HttpClientUtils.java:112)
+	at net.sppan.base.common.utils.HttpClientUtils.doGet(HttpClientUtils.java:56)
+	at net.sppan.base.controller.admin.system.UserController.main(UserController.java:123)
+2019-03-29 15:15:27.005 [main] INFO  org.apache.http.impl.execchain.RetryExec - Retrying request to {}->hhttp://193.112.47.47:3000
+2019-03-29 15:15:27.006 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+2019-03-29 15:15:27.006 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+2019-03-29 15:15:27.006 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}->hhttp://193.112.47.47:3000][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2019-03-29 15:15:27.006 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 2][route: {}->hhttp://193.112.47.47:3000][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2019-03-29 15:15:27.006 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {}->hhttp://193.112.47.47:3000
+2019-03-29 15:15:27.006 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-2: Shutdown connection
+2019-03-29 15:15:27.006 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection discarded
+2019-03-29 15:15:27.006 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 2][route: {}->hhttp://193.112.47.47:3000][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2019-03-29 15:15:27.006 [main] INFO  org.apache.http.impl.execchain.RetryExec - I/O exception (org.apache.http.conn.UnsupportedSchemeException) caught when processing request to {}->hhttp://193.112.47.47:3000: hhttp protocol is not supported
+2019-03-29 15:15:27.006 [main] DEBUG org.apache.http.impl.execchain.RetryExec - hhttp protocol is not supported
+org.apache.http.conn.UnsupportedSchemeException: hhttp protocol is not supported
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:109)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at net.sppan.base.common.utils.HttpClientUtils.getHttpClientResult(HttpClientUtils.java:315)
+	at net.sppan.base.common.utils.HttpClientUtils.doGet(HttpClientUtils.java:112)
+	at net.sppan.base.common.utils.HttpClientUtils.doGet(HttpClientUtils.java:56)
+	at net.sppan.base.controller.admin.system.UserController.main(UserController.java:123)
+2019-03-29 15:15:27.007 [main] INFO  org.apache.http.impl.execchain.RetryExec - Retrying request to {}->hhttp://193.112.47.47:3000
+2019-03-29 15:15:27.007 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+2019-03-29 15:15:27.007 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+2019-03-29 15:15:27.007 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}->hhttp://193.112.47.47:3000][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2019-03-29 15:15:27.007 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 3][route: {}->hhttp://193.112.47.47:3000][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2019-03-29 15:15:27.007 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {}->hhttp://193.112.47.47:3000
+2019-03-29 15:15:27.007 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-3: Shutdown connection
+2019-03-29 15:15:27.008 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection discarded
+2019-03-29 15:15:27.008 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 3][route: {}->hhttp://193.112.47.47:3000][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2019-03-29 15:15:27.008 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager is shutting down
+2019-03-29 15:15:27.008 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager shut down
+2019-03-29 15:15:58.738 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+2019-03-29 15:15:58.749 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+2019-03-29 15:15:58.750 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}->http://193.112.47.47:3000][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2019-03-29 15:15:58.761 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {}->http://193.112.47.47:3000][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2019-03-29 15:15:58.763 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {}->http://193.112.47.47:3000
+2019-03-29 15:15:58.766 [main] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to /193.112.47.47:3000
+2019-03-29 15:15:59.079 [main] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 192.168.0.6:52375<->193.112.47.47:3000
+2019-03-29 15:15:59.080 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 6000
+2019-03-29 15:15:59.080 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request GET /api/Trader/00000000000000000000000000000000 HTTP/1.1
+2019-03-29 15:15:59.080 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+2019-03-29 15:15:59.081 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+2019-03-29 15:15:59.082 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> GET /api/Trader/00000000000000000000000000000000 HTTP/1.1
+2019-03-29 15:15:59.083 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Host: 193.112.47.47:3000
+2019-03-29 15:15:59.083 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Connection: Keep-Alive
+2019-03-29 15:15:59.083 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_202)
+2019-03-29 15:15:59.083 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+2019-03-29 15:15:59.083 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "GET /api/Trader/00000000000000000000000000000000 HTTP/1.1[\r][\n]"
+2019-03-29 15:15:59.083 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Host: 193.112.47.47:3000[\r][\n]"
+2019-03-29 15:15:59.083 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2019-03-29 15:15:59.083 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_202)[\r][\n]"
+2019-03-29 15:15:59.083 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2019-03-29 15:15:59.083 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "[\r][\n]"
+2019-03-29 15:15:59.292 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2019-03-29 15:15:59.293 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Vary: Origin, Accept-Encoding[\r][\n]"
+2019-03-29 15:15:59.293 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Access-Control-Allow-Credentials: true[\r][\n]"
+2019-03-29 15:15:59.293 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "X-XSS-Protection: 1; mode=block[\r][\n]"
+2019-03-29 15:15:59.293 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "X-Frame-Options: DENY[\r][\n]"
+2019-03-29 15:15:59.293 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "X-Download-Options: noopen[\r][\n]"
+2019-03-29 15:15:59.293 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "X-Content-Type-Options: nosniff[\r][\n]"
+2019-03-29 15:15:59.293 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2019-03-29 15:15:59.293 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Length: 124[\r][\n]"
+2019-03-29 15:15:59.293 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "ETag: W/"7c-9vE1Cx4fVe2XXIh7HJ86CoDTxNk"[\r][\n]"
+2019-03-29 15:15:59.293 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Date: Fri, 29 Mar 2019 07:15:59 GMT[\r][\n]"
+2019-03-29 15:15:59.293 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+2019-03-29 15:15:59.293 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+2019-03-29 15:15:59.293 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "{"$class":"org.example.mynetwork.Trader","tradeId":"00000000000000000000000000000000","userName":"admin","nickName":"admin"}"
+2019-03-29 15:15:59.294 [main] DEBUG org.apache.http.headers - http-outgoing-0 << HTTP/1.1 200 OK
+2019-03-29 15:15:59.295 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Vary: Origin, Accept-Encoding
+2019-03-29 15:15:59.295 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Access-Control-Allow-Credentials: true
+2019-03-29 15:15:59.295 [main] DEBUG org.apache.http.headers - http-outgoing-0 << X-XSS-Protection: 1; mode=block
+2019-03-29 15:15:59.295 [main] DEBUG org.apache.http.headers - http-outgoing-0 << X-Frame-Options: DENY
+2019-03-29 15:15:59.295 [main] DEBUG org.apache.http.headers - http-outgoing-0 << X-Download-Options: noopen
+2019-03-29 15:15:59.295 [main] DEBUG org.apache.http.headers - http-outgoing-0 << X-Content-Type-Options: nosniff
+2019-03-29 15:15:59.295 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Type: application/json; charset=utf-8
+2019-03-29 15:15:59.295 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Length: 124
+2019-03-29 15:15:59.295 [main] DEBUG org.apache.http.headers - http-outgoing-0 << ETag: W/"7c-9vE1Cx4fVe2XXIh7HJ86CoDTxNk"
+2019-03-29 15:15:59.295 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Date: Fri, 29 Mar 2019 07:15:59 GMT
+2019-03-29 15:15:59.295 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Connection: keep-alive
+2019-03-29 15:15:59.299 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+2019-03-29 15:15:59.303 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 0][route: {}->http://193.112.47.47:3000] can be kept alive indefinitely
+2019-03-29 15:15:59.303 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 0
+2019-03-29 15:15:59.303 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {}->http://193.112.47.47:3000][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2019-03-29 15:15:59.304 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager is shutting down
+2019-03-29 15:15:59.304 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: Close connection
+2019-03-29 15:15:59.305 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager shut down
+2019-03-29 15:29:40.396 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+2019-03-29 15:29:40.405 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+2019-03-29 15:29:40.406 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}->http://193.112.47.47:3000][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2019-03-29 15:29:40.417 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {}->http://193.112.47.47:3000][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2019-03-29 15:29:40.418 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {}->http://193.112.47.47:3000
+2019-03-29 15:29:40.419 [main] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to /193.112.47.47:3000
+2019-03-29 15:29:40.447 [main] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 192.168.0.6:52725<->193.112.47.47:3000
+2019-03-29 15:29:40.447 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 6000
+2019-03-29 15:29:40.447 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request GET /api/Trader/00000000000000000000000000000000 HTTP/1.1
+2019-03-29 15:29:40.447 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+2019-03-29 15:29:40.448 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+2019-03-29 15:29:40.449 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> GET /api/Trader/00000000000000000000000000000000 HTTP/1.1
+2019-03-29 15:29:40.450 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Host: 193.112.47.47:3000
+2019-03-29 15:29:40.450 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Connection: Keep-Alive
+2019-03-29 15:29:40.450 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_202)
+2019-03-29 15:29:40.450 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+2019-03-29 15:29:40.450 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "GET /api/Trader/00000000000000000000000000000000 HTTP/1.1[\r][\n]"
+2019-03-29 15:29:40.450 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Host: 193.112.47.47:3000[\r][\n]"
+2019-03-29 15:29:40.450 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2019-03-29 15:29:40.450 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_202)[\r][\n]"
+2019-03-29 15:29:40.450 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2019-03-29 15:29:40.450 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "[\r][\n]"
+2019-03-29 15:29:40.619 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2019-03-29 15:29:40.620 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Vary: Origin, Accept-Encoding[\r][\n]"
+2019-03-29 15:29:40.620 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Access-Control-Allow-Credentials: true[\r][\n]"
+2019-03-29 15:29:40.620 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "X-XSS-Protection: 1; mode=block[\r][\n]"
+2019-03-29 15:29:40.620 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "X-Frame-Options: DENY[\r][\n]"
+2019-03-29 15:29:40.620 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "X-Download-Options: noopen[\r][\n]"
+2019-03-29 15:29:40.620 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "X-Content-Type-Options: nosniff[\r][\n]"
+2019-03-29 15:29:40.620 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2019-03-29 15:29:40.620 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Length: 124[\r][\n]"
+2019-03-29 15:29:40.620 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "ETag: W/"7c-9vE1Cx4fVe2XXIh7HJ86CoDTxNk"[\r][\n]"
+2019-03-29 15:29:40.620 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Date: Fri, 29 Mar 2019 07:29:41 GMT[\r][\n]"
+2019-03-29 15:29:40.620 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+2019-03-29 15:29:40.620 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+2019-03-29 15:29:40.620 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "{"$class":"org.example.mynetwork.Trader","tradeId":"00000000000000000000000000000000","userName":"admin","nickName":"admin"}"
+2019-03-29 15:29:40.622 [main] DEBUG org.apache.http.headers - http-outgoing-0 << HTTP/1.1 200 OK
+2019-03-29 15:29:40.623 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Vary: Origin, Accept-Encoding
+2019-03-29 15:29:40.623 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Access-Control-Allow-Credentials: true
+2019-03-29 15:29:40.623 [main] DEBUG org.apache.http.headers - http-outgoing-0 << X-XSS-Protection: 1; mode=block
+2019-03-29 15:29:40.623 [main] DEBUG org.apache.http.headers - http-outgoing-0 << X-Frame-Options: DENY
+2019-03-29 15:29:40.623 [main] DEBUG org.apache.http.headers - http-outgoing-0 << X-Download-Options: noopen
+2019-03-29 15:29:40.623 [main] DEBUG org.apache.http.headers - http-outgoing-0 << X-Content-Type-Options: nosniff
+2019-03-29 15:29:40.623 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Type: application/json; charset=utf-8
+2019-03-29 15:29:40.623 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Length: 124
+2019-03-29 15:29:40.623 [main] DEBUG org.apache.http.headers - http-outgoing-0 << ETag: W/"7c-9vE1Cx4fVe2XXIh7HJ86CoDTxNk"
+2019-03-29 15:29:40.623 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Date: Fri, 29 Mar 2019 07:29:41 GMT
+2019-03-29 15:29:40.623 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Connection: keep-alive
+2019-03-29 15:29:40.627 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+2019-03-29 15:29:40.632 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 0][route: {}->http://193.112.47.47:3000] can be kept alive indefinitely
+2019-03-29 15:29:40.633 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 0
+2019-03-29 15:29:40.633 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {}->http://193.112.47.47:3000][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2019-03-29 15:29:40.634 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager is shutting down
+2019-03-29 15:29:40.634 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: Close connection
+2019-03-29 15:29:40.634 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager shut down
+2019-03-29 15:36:11.769 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+2019-03-29 15:36:11.783 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+2019-03-29 15:36:11.784 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}->http://193.112.47.47:3000][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2019-03-29 15:36:11.798 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {}->http://193.112.47.47:3000][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2019-03-29 15:36:11.800 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {}->http://193.112.47.47:3000
+2019-03-29 15:36:11.802 [main] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to /193.112.47.47:3000
+2019-03-29 15:36:11.828 [main] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 192.168.0.6:52889<->193.112.47.47:3000
+2019-03-29 15:36:11.828 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 6000
+2019-03-29 15:36:11.828 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request GET /api/Trader/00000000000000000000000000000000 HTTP/1.1
+2019-03-29 15:36:11.829 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+2019-03-29 15:36:11.829 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+2019-03-29 15:36:11.831 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> GET /api/Trader/00000000000000000000000000000000 HTTP/1.1
+2019-03-29 15:36:11.831 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Host: 193.112.47.47:3000
+2019-03-29 15:36:11.831 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Connection: Keep-Alive
+2019-03-29 15:36:11.831 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_202)
+2019-03-29 15:36:11.831 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+2019-03-29 15:36:11.832 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "GET /api/Trader/00000000000000000000000000000000 HTTP/1.1[\r][\n]"
+2019-03-29 15:36:11.832 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Host: 193.112.47.47:3000[\r][\n]"
+2019-03-29 15:36:11.832 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2019-03-29 15:36:11.832 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_202)[\r][\n]"
+2019-03-29 15:36:11.832 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2019-03-29 15:36:11.832 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "[\r][\n]"
+2019-03-29 15:36:12.011 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2019-03-29 15:36:12.011 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Vary: Origin, Accept-Encoding[\r][\n]"
+2019-03-29 15:36:12.012 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Access-Control-Allow-Credentials: true[\r][\n]"
+2019-03-29 15:36:12.012 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "X-XSS-Protection: 1; mode=block[\r][\n]"
+2019-03-29 15:36:12.012 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "X-Frame-Options: DENY[\r][\n]"
+2019-03-29 15:36:12.012 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "X-Download-Options: noopen[\r][\n]"
+2019-03-29 15:36:12.012 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "X-Content-Type-Options: nosniff[\r][\n]"
+2019-03-29 15:36:12.012 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2019-03-29 15:36:12.012 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Length: 124[\r][\n]"
+2019-03-29 15:36:12.012 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "ETag: W/"7c-9vE1Cx4fVe2XXIh7HJ86CoDTxNk"[\r][\n]"
+2019-03-29 15:36:12.012 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Date: Fri, 29 Mar 2019 07:36:12 GMT[\r][\n]"
+2019-03-29 15:36:12.012 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+2019-03-29 15:36:12.012 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+2019-03-29 15:36:12.012 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "{"$class":"org.example.mynetwork.Trader","tradeId":"00000000000000000000000000000000","userName":"admin","nickName":"admin"}"
+2019-03-29 15:36:12.014 [main] DEBUG org.apache.http.headers - http-outgoing-0 << HTTP/1.1 200 OK
+2019-03-29 15:36:12.015 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Vary: Origin, Accept-Encoding
+2019-03-29 15:36:12.015 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Access-Control-Allow-Credentials: true
+2019-03-29 15:36:12.015 [main] DEBUG org.apache.http.headers - http-outgoing-0 << X-XSS-Protection: 1; mode=block
+2019-03-29 15:36:12.015 [main] DEBUG org.apache.http.headers - http-outgoing-0 << X-Frame-Options: DENY
+2019-03-29 15:36:12.015 [main] DEBUG org.apache.http.headers - http-outgoing-0 << X-Download-Options: noopen
+2019-03-29 15:36:12.015 [main] DEBUG org.apache.http.headers - http-outgoing-0 << X-Content-Type-Options: nosniff
+2019-03-29 15:36:12.015 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Type: application/json; charset=utf-8
+2019-03-29 15:36:12.015 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Length: 124
+2019-03-29 15:36:12.015 [main] DEBUG org.apache.http.headers - http-outgoing-0 << ETag: W/"7c-9vE1Cx4fVe2XXIh7HJ86CoDTxNk"
+2019-03-29 15:36:12.015 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Date: Fri, 29 Mar 2019 07:36:12 GMT
+2019-03-29 15:36:12.015 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Connection: keep-alive
+2019-03-29 15:36:12.020 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+2019-03-29 15:36:12.026 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 0][route: {}->http://193.112.47.47:3000] can be kept alive indefinitely
+2019-03-29 15:36:12.026 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 0
+2019-03-29 15:36:12.026 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {}->http://193.112.47.47:3000][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2019-03-29 15:36:12.027 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager is shutting down
+2019-03-29 15:36:12.028 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: Close connection
+2019-03-29 15:36:12.028 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager shut down

@@ -1,0 +1,1297 @@
+2019-03-21 14:02:41.150 [main] DEBUG net.sppan.base.config.listener.ApplicationEventListener - 初始化环境变量
+2019-03-21 14:02:41.400 [main] INFO  net.sppan.base.Application - Starting Application on DESKTOP-HR8FSOR with PID 12184 (D:\GitProject\springboot_authority\target\classes started by yywbyjj in D:\GitProject\springboot_authority)
+2019-03-21 14:02:41.400 [main] DEBUG net.sppan.base.Application - Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+2019-03-21 14:02:41.401 [main] INFO  net.sppan.base.Application - No active profile set, falling back to default profiles: default
+2019-03-21 14:02:41.434 [main] DEBUG net.sppan.base.config.listener.ApplicationEventListener - 初始化环境变量完成
+2019-03-21 14:02:41.491 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2019-03-21 14:02:42.519 [main] DEBUG net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from InputStream
+2019-03-21 14:02:42.529 [main] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xmlns:xsi
+2019-03-21 14:02:42.529 [main] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
+2019-03-21 14:02:42.530 [main] DEBUG net.sf.ehcache.config.DiskStoreConfiguration - Disk Store Path: C:\Users\yywbyjj\AppData\Local\Temp\
+2019-03-21 14:02:42.541 [main] DEBUG net.sf.ehcache.util.PropertyUtil - propertiesString is null.
+2019-03-21 14:02:42.546 [main] DEBUG net.sf.ehcache.config.ConfigurationHelper - No CacheManagerEventListenerFactory class specified. Skipping...
+2019-03-21 14:02:42.575 [main] DEBUG net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+2019-03-21 14:02:42.575 [main] DEBUG net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+2019-03-21 14:02:42.575 [main] DEBUG net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+2019-03-21 14:02:42.583 [main] DEBUG net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+2019-03-21 14:02:42.583 [main] DEBUG net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+2019-03-21 14:02:42.583 [main] DEBUG net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+2019-03-21 14:02:42.583 [main] WARN  net.sf.ehcache.config.CacheConfiguration - Configuration problem for cache resourceCache: MaxEntriesLocalHeap equal or greater than MaxEntriesLocalDisk. This will result in useless disk storage.
+2019-03-21 14:02:42.608 [main] DEBUG net.sf.ehcache.DiskStorePathManager - Using diskstore path C:\Users\yywbyjj\AppData\Local\Temp
+2019-03-21 14:02:42.609 [main] DEBUG net.sf.ehcache.DiskStorePathManager - Holding exclusive lock on C:\Users\yywbyjj\AppData\Local\Temp\.ehcache-diskstore.lock
+2019-03-21 14:02:42.609 [main] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory - Failed to delete file resource%0043ache.index
+2019-03-21 14:02:42.613 [main] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory - Matching data file missing (or empty) for index file. Deleting index file C:\Users\yywbyjj\AppData\Local\Temp\resource%0043ache.index
+2019-03-21 14:02:42.613 [main] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory - Failed to delete file resource%0043ache.index
+2019-03-21 14:02:42.647 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE
+2019-03-21 14:02:42.647 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE_BYTES
+2019-03-21 14:02:42.647 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: WRITER_QUEUE_LENGTH
+2019-03-21 14:02:42.647 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: REMOTE_SIZE
+2019-03-21 14:02:42.648 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LAST_REJOIN_TIMESTAMP
+2019-03-21 14:02:42.654 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_GET
+2019-03-21 14:02:42.655 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_PUT
+2019-03-21 14:02:42.655 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_REMOVE
+2019-03-21 14:02:42.655 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_COMMIT
+2019-03-21 14:02:42.655 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_ROLLBACK
+2019-03-21 14:02:42.655 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_RECOVERY
+2019-03-21 14:02:42.655 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: CLUSTER_EVENT
+2019-03-21 14:02:42.655 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: NONSTOP
+2019-03-21 14:02:42.659 [main] DEBUG net.sf.ehcache.Cache - Initialised cache: resourceCache
+2019-03-21 14:02:42.659 [main] DEBUG net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured. Skipping for 'resourceCache'.
+2019-03-21 14:02:42.659 [main] DEBUG net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured for defaultCache. Skipping for 'resourceCache'.
+2019-03-21 14:02:43.226 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-03-21 14:02:43.401 [Druid-ConnectionPool-Create-104367332] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/base?characterEncoding=utf8
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'base'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3970)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3906)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2253)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2284)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2083)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:806)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:410)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:328)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1888)
+2019-03-21 14:02:43.403 [Druid-ConnectionPool-Create-104367332] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/base?characterEncoding=utf8
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'base'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3970)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3906)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2253)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2284)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2083)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:806)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:410)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:328)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1888)
+2019-03-21 14:02:43.408 [Druid-ConnectionPool-Create-104367332] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/base?characterEncoding=utf8
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'base'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3970)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3906)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2253)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2284)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2083)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:806)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:410)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:328)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1888)
+2019-03-21 14:02:43.411 [Druid-ConnectionPool-Create-104367332] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/base?characterEncoding=utf8
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'base'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3970)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3906)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2253)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2284)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2083)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:806)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:410)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:328)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1888)
+2019-03-21 14:02:43.412 [Druid-ConnectionPool-Create-104367332] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/base?characterEncoding=utf8
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'base'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3970)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3906)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2253)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2284)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2083)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:806)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:410)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:328)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1888)
+2019-03-21 14:02:43.414 [Druid-ConnectionPool-Create-104367332] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/base?characterEncoding=utf8
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'base'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3970)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3906)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2253)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2284)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2083)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:806)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:410)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:328)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1888)
+2019-03-21 14:02:43.416 [Druid-ConnectionPool-Create-104367332] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/base?characterEncoding=utf8
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'base'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3970)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3906)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2253)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2284)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2083)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:806)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:410)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:328)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1888)
+2019-03-21 14:02:43.418 [Druid-ConnectionPool-Create-104367332] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/base?characterEncoding=utf8
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'base'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3970)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3906)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2253)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2284)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2083)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:806)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:410)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:328)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1888)
+2019-03-21 14:02:43.420 [Druid-ConnectionPool-Create-104367332] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/base?characterEncoding=utf8
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'base'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3970)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3906)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2253)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2284)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2083)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:806)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:410)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:328)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1888)
+2019-03-21 14:02:43.422 [Druid-ConnectionPool-Create-104367332] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/base?characterEncoding=utf8
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'base'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3970)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3906)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2253)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2284)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2083)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:806)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:410)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:328)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1888)
+2019-03-21 14:02:43.423 [Druid-ConnectionPool-Create-104367332] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/base?characterEncoding=utf8
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'base'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3970)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3906)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2253)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2284)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2083)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:806)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:410)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:328)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1888)
+2019-03-21 14:02:43.426 [Druid-ConnectionPool-Create-104367332] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/base?characterEncoding=utf8
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'base'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3970)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3906)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2253)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2284)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2083)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:806)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:410)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:328)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1888)
+2019-03-21 14:02:43.428 [Druid-ConnectionPool-Create-104367332] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/base?characterEncoding=utf8
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'base'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3970)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3906)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2253)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2284)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2083)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:806)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:410)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:328)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1888)
+2019-03-21 14:02:43.430 [Druid-ConnectionPool-Create-104367332] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/base?characterEncoding=utf8
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'base'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3970)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3906)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2253)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2284)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2083)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:806)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:410)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:328)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1888)
+2019-03-21 14:02:43.432 [Druid-ConnectionPool-Create-104367332] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/base?characterEncoding=utf8
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'base'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3970)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3906)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2253)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2284)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2083)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:806)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:410)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:328)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1888)
+2019-03-21 14:02:43.435 [Druid-ConnectionPool-Create-104367332] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/base?characterEncoding=utf8
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'base'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3970)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3906)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2253)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2284)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2083)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:806)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:410)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:328)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1888)
+2019-03-21 14:02:43.436 [Druid-ConnectionPool-Create-104367332] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/base?characterEncoding=utf8
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'base'
+	at sun.reflect.GeneratedConstructorAccessor36.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3970)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3906)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2253)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2284)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2083)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:806)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.GeneratedConstructorAccessor33.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:410)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:328)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1888)
+2019-03-21 14:02:43.439 [Druid-ConnectionPool-Create-104367332] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/base?characterEncoding=utf8
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'base'
+	at sun.reflect.GeneratedConstructorAccessor36.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3970)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3906)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2253)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2284)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2083)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:806)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.GeneratedConstructorAccessor33.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:410)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:328)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1888)
+2019-03-21 14:02:43.442 [Druid-ConnectionPool-Create-104367332] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/base?characterEncoding=utf8
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'base'
+	at sun.reflect.GeneratedConstructorAccessor36.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3970)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3906)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2253)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2284)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2083)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:806)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.GeneratedConstructorAccessor33.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:410)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:328)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1888)
+2019-03-21 14:02:43.444 [Druid-ConnectionPool-Create-104367332] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/base?characterEncoding=utf8
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'base'
+	at sun.reflect.GeneratedConstructorAccessor36.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3970)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3906)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2253)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2284)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2083)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:806)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.GeneratedConstructorAccessor33.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:410)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:328)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1888)
+2019-03-21 14:02:43.447 [Druid-ConnectionPool-Create-104367332] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/base?characterEncoding=utf8
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'base'
+	at sun.reflect.GeneratedConstructorAccessor36.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3970)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3906)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2253)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2284)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2083)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:806)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.GeneratedConstructorAccessor33.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:410)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:328)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1888)
+2019-03-21 14:02:43.449 [Druid-ConnectionPool-Create-104367332] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/base?characterEncoding=utf8
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'base'
+	at sun.reflect.GeneratedConstructorAccessor36.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3970)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3906)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2253)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2284)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2083)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:806)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.GeneratedConstructorAccessor33.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:410)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:328)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1888)
+2019-03-21 14:02:43.451 [Druid-ConnectionPool-Create-104367332] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/base?characterEncoding=utf8
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'base'
+	at sun.reflect.GeneratedConstructorAccessor36.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3970)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3906)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2253)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2284)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2083)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:806)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.GeneratedConstructorAccessor33.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:410)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:328)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1888)
+2019-03-21 14:02:43.453 [Druid-ConnectionPool-Create-104367332] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/base?characterEncoding=utf8
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'base'
+	at sun.reflect.GeneratedConstructorAccessor36.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3970)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3906)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2253)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2284)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2083)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:806)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.GeneratedConstructorAccessor33.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:410)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:328)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1888)
+2019-03-21 14:02:43.456 [Druid-ConnectionPool-Create-104367332] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/base?characterEncoding=utf8
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'base'
+	at sun.reflect.GeneratedConstructorAccessor36.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3970)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3906)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2253)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2284)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2083)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:806)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.GeneratedConstructorAccessor33.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:410)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:328)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1888)
+2019-03-21 14:02:43.459 [Druid-ConnectionPool-Create-104367332] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/base?characterEncoding=utf8
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'base'
+	at sun.reflect.GeneratedConstructorAccessor36.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3970)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3906)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2253)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2284)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2083)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:806)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.GeneratedConstructorAccessor33.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:410)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:328)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1888)
+2019-03-21 14:02:43.461 [Druid-ConnectionPool-Create-104367332] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/base?characterEncoding=utf8
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'base'
+	at sun.reflect.GeneratedConstructorAccessor36.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3970)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3906)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2253)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2284)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2083)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:806)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.GeneratedConstructorAccessor33.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:410)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:328)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1888)
+2019-03-21 14:02:43.463 [Druid-ConnectionPool-Create-104367332] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/base?characterEncoding=utf8
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'base'
+	at sun.reflect.GeneratedConstructorAccessor36.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3970)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3906)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2253)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2284)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2083)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:806)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.GeneratedConstructorAccessor33.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:410)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:328)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1888)
+2019-03-21 14:02:43.465 [Druid-ConnectionPool-Create-104367332] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/base?characterEncoding=utf8
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'base'
+	at sun.reflect.GeneratedConstructorAccessor36.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3970)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3906)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2253)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2284)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2083)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:806)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.GeneratedConstructorAccessor33.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:410)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:328)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1888)
+2019-03-21 14:02:43.466 [Druid-ConnectionPool-Create-104367332] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/base?characterEncoding=utf8
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'base'
+	at sun.reflect.GeneratedConstructorAccessor36.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3970)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3906)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2253)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2284)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2083)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:806)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.GeneratedConstructorAccessor33.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:410)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:328)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1888)
+2019-03-21 14:02:43.468 [Druid-ConnectionPool-Create-104367332] ERROR com.alibaba.druid.pool.DruidDataSource - create connection error, url: jdbc:mysql://127.0.0.1:3306/base?characterEncoding=utf8
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'base'
+	at sun.reflect.GeneratedConstructorAccessor36.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3970)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3906)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2253)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2284)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2083)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:806)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.GeneratedConstructorAccessor33.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:410)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:328)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1888)
+2019-03-21 14:03:37.873 [main] DEBUG net.sppan.base.config.listener.ApplicationEventListener - 初始化环境变量
+2019-03-21 14:03:37.925 [main] INFO  net.sppan.base.Application - Starting Application on DESKTOP-HR8FSOR with PID 14076 (D:\GitProject\springboot_authority\target\classes started by yywbyjj in D:\GitProject\springboot_authority)
+2019-03-21 14:03:37.926 [main] DEBUG net.sppan.base.Application - Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+2019-03-21 14:03:37.926 [main] INFO  net.sppan.base.Application - No active profile set, falling back to default profiles: default
+2019-03-21 14:03:37.956 [main] DEBUG net.sppan.base.config.listener.ApplicationEventListener - 初始化环境变量完成
+2019-03-21 14:03:38.018 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2019-03-21 14:03:38.929 [main] DEBUG net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from InputStream
+2019-03-21 14:03:38.937 [main] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xmlns:xsi
+2019-03-21 14:03:38.937 [main] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
+2019-03-21 14:03:38.937 [main] DEBUG net.sf.ehcache.config.DiskStoreConfiguration - Disk Store Path: C:\Users\yywbyjj\AppData\Local\Temp\
+2019-03-21 14:03:38.945 [main] DEBUG net.sf.ehcache.util.PropertyUtil - propertiesString is null.
+2019-03-21 14:03:38.949 [main] DEBUG net.sf.ehcache.config.ConfigurationHelper - No CacheManagerEventListenerFactory class specified. Skipping...
+2019-03-21 14:03:38.969 [main] DEBUG net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+2019-03-21 14:03:38.969 [main] DEBUG net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+2019-03-21 14:03:38.969 [main] DEBUG net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+2019-03-21 14:03:38.973 [main] DEBUG net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+2019-03-21 14:03:38.973 [main] DEBUG net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+2019-03-21 14:03:38.973 [main] DEBUG net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+2019-03-21 14:03:38.973 [main] WARN  net.sf.ehcache.config.CacheConfiguration - Configuration problem for cache resourceCache: MaxEntriesLocalHeap equal or greater than MaxEntriesLocalDisk. This will result in useless disk storage.
+2019-03-21 14:03:38.979 [main] DEBUG net.sf.ehcache.DiskStorePathManager - Using diskstore path C:\Users\yywbyjj\AppData\Local\Temp
+2019-03-21 14:03:38.979 [main] DEBUG net.sf.ehcache.DiskStorePathManager - Holding exclusive lock on C:\Users\yywbyjj\AppData\Local\Temp\.ehcache-diskstore.lock
+2019-03-21 14:03:38.979 [main] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory - Failed to delete file resource%0043ache.index
+2019-03-21 14:03:38.982 [main] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory - Matching data file missing (or empty) for index file. Deleting index file C:\Users\yywbyjj\AppData\Local\Temp\resource%0043ache.index
+2019-03-21 14:03:38.983 [main] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory - Failed to delete file resource%0043ache.index
+2019-03-21 14:03:39.007 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE
+2019-03-21 14:03:39.008 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE_BYTES
+2019-03-21 14:03:39.008 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: WRITER_QUEUE_LENGTH
+2019-03-21 14:03:39.008 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: REMOTE_SIZE
+2019-03-21 14:03:39.008 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LAST_REJOIN_TIMESTAMP
+2019-03-21 14:03:39.014 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_GET
+2019-03-21 14:03:39.015 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_PUT
+2019-03-21 14:03:39.015 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_REMOVE
+2019-03-21 14:03:39.015 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_COMMIT
+2019-03-21 14:03:39.016 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_ROLLBACK
+2019-03-21 14:03:39.016 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_RECOVERY
+2019-03-21 14:03:39.016 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: CLUSTER_EVENT
+2019-03-21 14:03:39.016 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: NONSTOP
+2019-03-21 14:03:39.019 [main] DEBUG net.sf.ehcache.Cache - Initialised cache: resourceCache
+2019-03-21 14:03:39.019 [main] DEBUG net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured. Skipping for 'resourceCache'.
+2019-03-21 14:03:39.019 [main] DEBUG net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured for defaultCache. Skipping for 'resourceCache'.
+2019-03-21 14:03:39.418 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-03-21 14:03:39.940 [main] DEBUG org.hibernate.SQL - alter table tb_resource drop foreign key FKf5ra2gn0xedeida2op8097sr5
+2019-03-21 14:03:39.944 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table tb_resource drop foreign key FKf5ra2gn0xedeida2op8097sr5
+2019-03-21 14:03:39.945 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - Table 'base.tb_resource' doesn't exist
+2019-03-21 14:03:39.945 [main] DEBUG org.hibernate.SQL - alter table tb_role_resource drop foreign key FK868kc8iic48ilv5npa80ut6qo
+2019-03-21 14:03:39.945 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table tb_role_resource drop foreign key FK868kc8iic48ilv5npa80ut6qo
+2019-03-21 14:03:39.945 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - Table 'base.tb_role_resource' doesn't exist
+2019-03-21 14:03:39.945 [main] DEBUG org.hibernate.SQL - alter table tb_role_resource drop foreign key FK7ffc7h6obqxflhj1aq1mk20jk
+2019-03-21 14:03:39.946 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table tb_role_resource drop foreign key FK7ffc7h6obqxflhj1aq1mk20jk
+2019-03-21 14:03:39.946 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - Table 'base.tb_role_resource' doesn't exist
+2019-03-21 14:03:39.946 [main] DEBUG org.hibernate.SQL - alter table tb_user_role drop foreign key FKea2ootw6b6bb0xt3ptl28bymv
+2019-03-21 14:03:39.946 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table tb_user_role drop foreign key FKea2ootw6b6bb0xt3ptl28bymv
+2019-03-21 14:03:39.947 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - Table 'base.tb_user_role' doesn't exist
+2019-03-21 14:03:39.947 [main] DEBUG org.hibernate.SQL - alter table tb_user_role drop foreign key FK7vn3h53d0tqdimm8cp45gc0kl
+2019-03-21 14:03:39.947 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table tb_user_role drop foreign key FK7vn3h53d0tqdimm8cp45gc0kl
+2019-03-21 14:03:39.947 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - Table 'base.tb_user_role' doesn't exist
+2019-03-21 14:03:39.947 [main] DEBUG org.hibernate.SQL - drop table if exists tb_resource
+2019-03-21 14:03:39.948 [main] DEBUG org.hibernate.SQL - drop table if exists tb_role
+2019-03-21 14:03:39.949 [main] DEBUG org.hibernate.SQL - drop table if exists tb_role_resource
+2019-03-21 14:03:39.949 [main] DEBUG org.hibernate.SQL - drop table if exists tb_user
+2019-03-21 14:03:39.950 [main] DEBUG org.hibernate.SQL - drop table if exists tb_user_role
+2019-03-21 14:03:39.951 [main] DEBUG org.hibernate.SQL - create table tb_resource (id integer not null auto_increment, create_time datetime, description varchar(255), icon varchar(255), is_hide integer, level integer, name varchar(255), sort integer, source_key varchar(255), source_url varchar(255), type integer, update_time datetime, parent_id integer, primary key (id))
+2019-03-21 14:03:39.961 [main] DEBUG org.hibernate.SQL - create table tb_role (id integer not null auto_increment, create_time datetime, description varchar(255), name varchar(255), role_key varchar(255), status integer, update_time datetime, primary key (id))
+2019-03-21 14:03:39.966 [main] DEBUG org.hibernate.SQL - create table tb_role_resource (role_id integer not null, resource_id integer not null, primary key (role_id, resource_id))
+2019-03-21 14:03:39.970 [main] DEBUG org.hibernate.SQL - create table tb_user (id integer not null auto_increment, address varchar(255), birthday datetime, create_time datetime, delete_status integer, description varchar(255), email varchar(255), locked integer, nick_name varchar(255), password varchar(255), sex integer, telephone varchar(255), update_time datetime, user_name varchar(255), primary key (id))
+2019-03-21 14:03:39.975 [main] DEBUG org.hibernate.SQL - create table tb_user_role (user_id integer not null, role_id integer not null, primary key (user_id, role_id))
+2019-03-21 14:03:39.980 [main] DEBUG org.hibernate.SQL - alter table tb_resource add constraint FKf5ra2gn0xedeida2op8097sr5 foreign key (parent_id) references tb_resource (id)
+2019-03-21 14:03:39.993 [main] DEBUG org.hibernate.SQL - alter table tb_role_resource add constraint FK868kc8iic48ilv5npa80ut6qo foreign key (resource_id) references tb_resource (id)
+2019-03-21 14:03:40.004 [main] DEBUG org.hibernate.SQL - alter table tb_role_resource add constraint FK7ffc7h6obqxflhj1aq1mk20jk foreign key (role_id) references tb_role (id)
+2019-03-21 14:03:40.016 [main] DEBUG org.hibernate.SQL - alter table tb_user_role add constraint FKea2ootw6b6bb0xt3ptl28bymv foreign key (role_id) references tb_role (id)
+2019-03-21 14:03:40.026 [main] DEBUG org.hibernate.SQL - alter table tb_user_role add constraint FK7vn3h53d0tqdimm8cp45gc0kl foreign key (user_id) references tb_user (id)
+2019-03-21 14:03:40.552 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2019-03-21 14:03:40.553 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.6
+2019-03-21 14:03:40.628 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-03-21 14:03:41.672 [main] DEBUG net.sppan.base.config.listener.ApplicationEventListener - 应用刷新
+2019-03-21 14:03:41.678 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2019-03-21 14:03:41.683 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-80]
+2019-03-21 14:03:41.691 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2019-03-21 14:03:41.704 [main] DEBUG net.sppan.base.config.listener.ApplicationEventListener - 应用已启动完成
+2019-03-21 14:03:41.704 [main] INFO  net.sppan.base.Application - Started Application in 3.994 seconds (JVM running for 4.706)
+2019-03-21 14:03:41.704 [main] DEBUG net.sppan.base.Application - 启动成功
+2019-03-21 14:04:10.179 [http-nio-80-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-03-21 14:04:21.113 [http-nio-80-exec-4] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-03-21 14:04:21.297 [http-nio-80-exec-6] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-03-21 14:04:21.300 [http-nio-80-exec-6] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2019-03-21 14:04:21.307 [http-nio-80-exec-6] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2019-03-21 14:04:21.312 [http-nio-80-exec-6] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-03-21 14:04:21.315 [http-nio-80-exec-6] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-03-21 14:04:26.955 [http-nio-80-exec-8] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-03-21 14:04:26.960 [http-nio-80-exec-8] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2019-03-21 14:04:26.962 [http-nio-80-exec-8] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2019-03-21 14:04:26.971 [http-nio-80-exec-8] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-03-21 14:04:26.973 [http-nio-80-exec-8] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-03-21 14:04:26.975 [http-nio-80-exec-8] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-03-21 14:04:27.066 [http-nio-80-exec-7] DEBUG org.hibernate.SQL - select count(user0_.id) as col_0_0_ from tb_user user0_
+2019-03-21 14:04:27.068 [http-nio-80-exec-7] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ limit ?
+2019-03-21 14:04:27.097 [http-nio-80-exec-7] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2019-03-21 14:04:27.099 [http-nio-80-exec-7] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2019-03-21 14:04:28.322 [http-nio-80-exec-2] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-03-21 14:04:28.327 [http-nio-80-exec-2] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2019-03-21 14:04:28.328 [http-nio-80-exec-2] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2019-03-21 14:04:28.331 [http-nio-80-exec-2] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-03-21 14:04:28.333 [http-nio-80-exec-2] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-03-21 14:04:28.335 [http-nio-80-exec-2] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-03-21 14:04:28.379 [http-nio-80-exec-9] DEBUG org.hibernate.SQL - select count(role0_.id) as col_0_0_ from tb_role role0_
+2019-03-21 14:04:28.380 [http-nio-80-exec-9] DEBUG org.hibernate.SQL - select role0_.id as id1_1_, role0_.create_time as create_t2_1_, role0_.description as descript3_1_, role0_.name as name4_1_, role0_.role_key as role_key5_1_, role0_.status as status6_1_, role0_.update_time as update_t7_1_ from tb_role role0_ limit ?
+2019-03-21 14:04:28.381 [http-nio-80-exec-9] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2019-03-21 14:04:29.145 [http-nio-80-exec-8] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-03-21 14:04:29.146 [http-nio-80-exec-8] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2019-03-21 14:04:29.147 [http-nio-80-exec-8] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2019-03-21 14:04:29.172 [http-nio-80-exec-8] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-03-21 14:04:29.174 [http-nio-80-exec-8] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-03-21 14:04:29.176 [http-nio-80-exec-8] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-03-21 14:04:29.224 [http-nio-80-exec-3] DEBUG org.hibernate.SQL - select count(resource0_.id) as col_0_0_ from tb_resource resource0_
+2019-03-21 14:04:29.225 [http-nio-80-exec-3] DEBUG org.hibernate.SQL - select resource0_.id as id1_0_, resource0_.create_time as create_t2_0_, resource0_.description as descript3_0_, resource0_.icon as icon4_0_, resource0_.is_hide as is_hide5_0_, resource0_.level as level6_0_, resource0_.name as name7_0_, resource0_.parent_id as parent_13_0_, resource0_.sort as sort8_0_, resource0_.source_key as source_k9_0_, resource0_.source_url as source_10_0_, resource0_.type as type11_0_, resource0_.update_time as update_12_0_ from tb_resource resource0_ limit ?
+2019-03-21 14:04:33.301 [http-nio-80-exec-4] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-03-21 14:04:33.303 [http-nio-80-exec-4] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2019-03-21 14:04:33.304 [http-nio-80-exec-4] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2019-03-21 14:04:33.309 [http-nio-80-exec-4] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-03-21 14:04:33.312 [http-nio-80-exec-4] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-03-21 14:04:33.314 [http-nio-80-exec-4] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-03-21 14:04:33.355 [http-nio-80-exec-5] DEBUG org.hibernate.SQL - select count(role0_.id) as col_0_0_ from tb_role role0_
+2019-03-21 14:04:33.356 [http-nio-80-exec-5] DEBUG org.hibernate.SQL - select role0_.id as id1_1_, role0_.create_time as create_t2_1_, role0_.description as descript3_1_, role0_.name as name4_1_, role0_.role_key as role_key5_1_, role0_.status as status6_1_, role0_.update_time as update_t7_1_ from tb_role role0_ limit ?
+2019-03-21 14:04:33.358 [http-nio-80-exec-5] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2019-03-21 14:04:33.914 [http-nio-80-exec-1] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-03-21 14:04:33.915 [http-nio-80-exec-1] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2019-03-21 14:04:33.915 [http-nio-80-exec-1] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2019-03-21 14:04:33.918 [http-nio-80-exec-1] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-03-21 14:04:33.921 [http-nio-80-exec-1] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-03-21 14:04:33.922 [http-nio-80-exec-1] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-03-21 14:04:33.955 [http-nio-80-exec-10] DEBUG org.hibernate.SQL - select count(user0_.id) as col_0_0_ from tb_user user0_
+2019-03-21 14:04:33.955 [http-nio-80-exec-10] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ limit ?
+2019-03-21 14:04:33.957 [http-nio-80-exec-10] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2019-03-21 14:04:33.957 [http-nio-80-exec-10] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2019-03-21 14:05:37.808 [http-nio-80-exec-7] DEBUG org.hibernate.SQL - select count(user0_.id) as col_0_0_ from tb_user user0_
+2019-03-21 14:05:37.808 [http-nio-80-exec-7] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ limit ?
+2019-03-21 14:05:37.810 [http-nio-80-exec-7] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2019-03-21 14:05:37.811 [http-nio-80-exec-7] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2019-03-21 15:06:43.890 [main] DEBUG net.sppan.base.config.listener.ApplicationEventListener - 初始化环境变量
+2019-03-21 15:06:44.082 [main] INFO  net.sppan.base.Application - Starting Application on DESKTOP-HR8FSOR with PID 14404 (D:\GitProject\springboot_authority\target\classes started by yywbyjj in D:\GitProject\springboot_authority)
+2019-03-21 15:06:44.082 [main] DEBUG net.sppan.base.Application - Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+2019-03-21 15:06:44.082 [main] INFO  net.sppan.base.Application - No active profile set, falling back to default profiles: default
+2019-03-21 15:06:44.113 [main] DEBUG net.sppan.base.config.listener.ApplicationEventListener - 初始化环境变量完成
+2019-03-21 15:06:44.175 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2019-03-21 15:06:45.108 [main] DEBUG net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from InputStream
+2019-03-21 15:06:45.137 [main] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xmlns:xsi
+2019-03-21 15:06:45.137 [main] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
+2019-03-21 15:06:45.138 [main] DEBUG net.sf.ehcache.config.DiskStoreConfiguration - Disk Store Path: C:\Users\yywbyjj\AppData\Local\Temp\
+2019-03-21 15:06:45.148 [main] DEBUG net.sf.ehcache.util.PropertyUtil - propertiesString is null.
+2019-03-21 15:06:45.152 [main] DEBUG net.sf.ehcache.config.ConfigurationHelper - No CacheManagerEventListenerFactory class specified. Skipping...
+2019-03-21 15:06:45.174 [main] DEBUG net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+2019-03-21 15:06:45.174 [main] DEBUG net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+2019-03-21 15:06:45.174 [main] DEBUG net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+2019-03-21 15:06:45.179 [main] DEBUG net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+2019-03-21 15:06:45.179 [main] DEBUG net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+2019-03-21 15:06:45.179 [main] DEBUG net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+2019-03-21 15:06:45.179 [main] WARN  net.sf.ehcache.config.CacheConfiguration - Configuration problem for cache resourceCache: MaxEntriesLocalHeap equal or greater than MaxEntriesLocalDisk. This will result in useless disk storage.
+2019-03-21 15:06:45.201 [main] DEBUG net.sf.ehcache.DiskStorePathManager - Using diskstore path C:\Users\yywbyjj\AppData\Local\Temp
+2019-03-21 15:06:45.201 [main] DEBUG net.sf.ehcache.DiskStorePathManager - Holding exclusive lock on C:\Users\yywbyjj\AppData\Local\Temp\.ehcache-diskstore.lock
+2019-03-21 15:06:45.202 [main] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory - Failed to delete file resource%0043ache.index
+2019-03-21 15:06:45.205 [main] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory - Matching data file missing (or empty) for index file. Deleting index file C:\Users\yywbyjj\AppData\Local\Temp\resource%0043ache.index
+2019-03-21 15:06:45.205 [main] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory - Failed to delete file resource%0043ache.index
+2019-03-21 15:06:45.230 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE
+2019-03-21 15:06:45.230 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE_BYTES
+2019-03-21 15:06:45.231 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: WRITER_QUEUE_LENGTH
+2019-03-21 15:06:45.231 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: REMOTE_SIZE
+2019-03-21 15:06:45.231 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LAST_REJOIN_TIMESTAMP
+2019-03-21 15:06:45.237 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_GET
+2019-03-21 15:06:45.238 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_PUT
+2019-03-21 15:06:45.238 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_REMOVE
+2019-03-21 15:06:45.238 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_COMMIT
+2019-03-21 15:06:45.238 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_ROLLBACK
+2019-03-21 15:06:45.238 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_RECOVERY
+2019-03-21 15:06:45.239 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: CLUSTER_EVENT
+2019-03-21 15:06:45.239 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: NONSTOP
+2019-03-21 15:06:45.242 [main] DEBUG net.sf.ehcache.Cache - Initialised cache: resourceCache
+2019-03-21 15:06:45.242 [main] DEBUG net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured. Skipping for 'resourceCache'.
+2019-03-21 15:06:45.242 [main] DEBUG net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured for defaultCache. Skipping for 'resourceCache'.
+2019-03-21 15:06:45.849 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-03-21 15:06:46.385 [main] DEBUG org.hibernate.SQL - alter table tb_resource drop foreign key FKf5ra2gn0xedeida2op8097sr5
+2019-03-21 15:06:46.417 [main] DEBUG org.hibernate.SQL - alter table tb_role_resource drop foreign key FK868kc8iic48ilv5npa80ut6qo
+2019-03-21 15:06:46.430 [main] DEBUG org.hibernate.SQL - alter table tb_role_resource drop foreign key FK7ffc7h6obqxflhj1aq1mk20jk
+2019-03-21 15:06:46.448 [main] DEBUG org.hibernate.SQL - alter table tb_user_role drop foreign key FKea2ootw6b6bb0xt3ptl28bymv
+2019-03-21 15:06:46.466 [main] DEBUG org.hibernate.SQL - alter table tb_user_role drop foreign key FK7vn3h53d0tqdimm8cp45gc0kl
+2019-03-21 15:06:46.482 [main] DEBUG org.hibernate.SQL - drop table if exists tb_resource
+2019-03-21 15:06:46.487 [main] DEBUG org.hibernate.SQL - drop table if exists tb_role
+2019-03-21 15:06:46.491 [main] DEBUG org.hibernate.SQL - drop table if exists tb_role_resource
+2019-03-21 15:06:46.494 [main] DEBUG org.hibernate.SQL - drop table if exists tb_user
+2019-03-21 15:06:46.499 [main] DEBUG org.hibernate.SQL - drop table if exists tb_user_role
+2019-03-21 15:06:46.502 [main] DEBUG org.hibernate.SQL - create table tb_resource (id integer not null auto_increment, create_time datetime, description varchar(255), icon varchar(255), is_hide integer, level integer, name varchar(255), sort integer, source_key varchar(255), source_url varchar(255), type integer, update_time datetime, parent_id integer, primary key (id))
+2019-03-21 15:06:46.509 [main] DEBUG org.hibernate.SQL - create table tb_role (id integer not null auto_increment, create_time datetime, description varchar(255), name varchar(255), role_key varchar(255), status integer, update_time datetime, primary key (id))
+2019-03-21 15:06:46.513 [main] DEBUG org.hibernate.SQL - create table tb_role_resource (role_id integer not null, resource_id integer not null, primary key (role_id, resource_id))
+2019-03-21 15:06:46.518 [main] DEBUG org.hibernate.SQL - create table tb_user (id integer not null auto_increment, address varchar(255), birthday datetime, create_time datetime, delete_status integer, description varchar(255), email varchar(255), locked integer, nick_name varchar(255), password varchar(255), sex integer, telephone varchar(255), update_time datetime, user_name varchar(255), primary key (id))
+2019-03-21 15:06:46.523 [main] DEBUG org.hibernate.SQL - create table tb_user_role (user_id integer not null, role_id integer not null, primary key (user_id, role_id))
+2019-03-21 15:06:46.528 [main] DEBUG org.hibernate.SQL - alter table tb_resource add constraint FKf5ra2gn0xedeida2op8097sr5 foreign key (parent_id) references tb_resource (id)
+2019-03-21 15:06:46.539 [main] DEBUG org.hibernate.SQL - alter table tb_role_resource add constraint FK868kc8iic48ilv5npa80ut6qo foreign key (resource_id) references tb_resource (id)
+2019-03-21 15:06:46.551 [main] DEBUG org.hibernate.SQL - alter table tb_role_resource add constraint FK7ffc7h6obqxflhj1aq1mk20jk foreign key (role_id) references tb_role (id)
+2019-03-21 15:06:46.563 [main] DEBUG org.hibernate.SQL - alter table tb_user_role add constraint FKea2ootw6b6bb0xt3ptl28bymv foreign key (role_id) references tb_role (id)
+2019-03-21 15:06:46.574 [main] DEBUG org.hibernate.SQL - alter table tb_user_role add constraint FK7vn3h53d0tqdimm8cp45gc0kl foreign key (user_id) references tb_user (id)
+2019-03-21 15:06:47.064 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2019-03-21 15:06:47.065 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.6
+2019-03-21 15:06:47.137 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-03-21 15:06:48.110 [main] DEBUG net.sppan.base.config.listener.ApplicationEventListener - 应用刷新
+2019-03-21 15:06:48.115 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2019-03-21 15:06:48.120 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-80]
+2019-03-21 15:06:48.128 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2019-03-21 15:06:48.141 [main] DEBUG net.sppan.base.config.listener.ApplicationEventListener - 应用已启动完成
+2019-03-21 15:06:48.141 [main] INFO  net.sppan.base.Application - Started Application in 4.423 seconds (JVM running for 5.59)
+2019-03-21 15:06:48.141 [main] DEBUG net.sppan.base.Application - 启动成功
+2019-03-21 15:06:58.157 [http-nio-80-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-03-21 15:06:58.271 [http-nio-80-exec-1] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_
+2019-03-21 15:06:58.297 [http-nio-80-exec-1] DEBUG net.sppan.base.controller.web.IndexController - [net.sppan.base.entity.User@fe291fb]
+2019-03-21 15:08:21.720 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+2019-03-21 15:08:21.731 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+2019-03-21 15:08:21.732 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}->http://193.112.47.47:3000][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2019-03-21 15:08:21.745 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {}->http://193.112.47.47:3000][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2019-03-21 15:08:21.746 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {}->http://193.112.47.47:3000
+2019-03-21 15:08:21.748 [main] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to /193.112.47.47:3000
+2019-03-21 15:08:21.938 [main] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 192.168.43.9:62236<->193.112.47.47:3000
+2019-03-21 15:08:21.939 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 6000
+2019-03-21 15:08:21.939 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request GET /api/Commodity HTTP/1.1
+2019-03-21 15:08:21.939 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+2019-03-21 15:08:21.939 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+2019-03-21 15:08:21.940 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> GET /api/Commodity HTTP/1.1
+2019-03-21 15:08:21.940 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Host: 193.112.47.47:3000
+2019-03-21 15:08:21.940 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Connection: Keep-Alive
+2019-03-21 15:08:21.940 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_202)
+2019-03-21 15:08:21.940 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+2019-03-21 15:08:21.940 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "GET /api/Commodity HTTP/1.1[\r][\n]"
+2019-03-21 15:08:21.940 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Host: 193.112.47.47:3000[\r][\n]"
+2019-03-21 15:08:21.940 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2019-03-21 15:08:21.941 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_202)[\r][\n]"
+2019-03-21 15:08:21.941 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2019-03-21 15:08:21.941 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "[\r][\n]"
+2019-03-21 15:08:22.208 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2019-03-21 15:08:22.208 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Vary: Origin, Accept-Encoding[\r][\n]"
+2019-03-21 15:08:22.208 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Access-Control-Allow-Credentials: true[\r][\n]"
+2019-03-21 15:08:22.208 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "X-XSS-Protection: 1; mode=block[\r][\n]"
+2019-03-21 15:08:22.208 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "X-Frame-Options: DENY[\r][\n]"
+2019-03-21 15:08:22.208 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "X-Download-Options: noopen[\r][\n]"
+2019-03-21 15:08:22.208 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "X-Content-Type-Options: nosniff[\r][\n]"
+2019-03-21 15:08:22.208 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2019-03-21 15:08:22.208 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Length: 417[\r][\n]"
+2019-03-21 15:08:22.208 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "ETag: W/"1a1-3tChdxKlHV4sj6uD/aKpjuhDwio"[\r][\n]"
+2019-03-21 15:08:22.208 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Date: Thu, 21 Mar 2019 07:08:22 GMT[\r][\n]"
+2019-03-21 15:08:22.208 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+2019-03-21 15:08:22.208 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+2019-03-21 15:08:22.208 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "[{"$class":"org.example.mynetwork.Commodity","tradingSymbol":"[0xe5][0x85][0xac][0xe5][0xae][0x89][0xe5][0xb1][0x80]1","description":"332624199706134637","mainExchange":"identityCard","quantity":1,"owner":"resource:org.example.mynetwork.Trader#TRADER1"},{"$class":"org.example.mynetwork.Commodity","tradingSymbol":"[0xe5][0x85][0xac][0xe5][0xae][0x89][0xe5][0xb1][0x80]2","description":"332624199706134637","mainExchange":"identityCard","quantity":1,"owner":"resource:org.example.mynetwork.Trader#TRADER1"}]"
+2019-03-21 15:08:22.212 [main] DEBUG org.apache.http.headers - http-outgoing-0 << HTTP/1.1 200 OK
+2019-03-21 15:08:22.212 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Vary: Origin, Accept-Encoding
+2019-03-21 15:08:22.212 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Access-Control-Allow-Credentials: true
+2019-03-21 15:08:22.212 [main] DEBUG org.apache.http.headers - http-outgoing-0 << X-XSS-Protection: 1; mode=block
+2019-03-21 15:08:22.212 [main] DEBUG org.apache.http.headers - http-outgoing-0 << X-Frame-Options: DENY
+2019-03-21 15:08:22.212 [main] DEBUG org.apache.http.headers - http-outgoing-0 << X-Download-Options: noopen
+2019-03-21 15:08:22.212 [main] DEBUG org.apache.http.headers - http-outgoing-0 << X-Content-Type-Options: nosniff
+2019-03-21 15:08:22.212 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Type: application/json; charset=utf-8
+2019-03-21 15:08:22.212 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Length: 417
+2019-03-21 15:08:22.212 [main] DEBUG org.apache.http.headers - http-outgoing-0 << ETag: W/"1a1-3tChdxKlHV4sj6uD/aKpjuhDwio"
+2019-03-21 15:08:22.213 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Date: Thu, 21 Mar 2019 07:08:22 GMT
+2019-03-21 15:08:22.213 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Connection: keep-alive
+2019-03-21 15:08:22.216 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+2019-03-21 15:08:22.221 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 0][route: {}->http://193.112.47.47:3000] can be kept alive indefinitely
+2019-03-21 15:08:22.221 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 0
+2019-03-21 15:08:22.221 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {}->http://193.112.47.47:3000][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2019-03-21 15:08:22.222 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager is shutting down
+2019-03-21 15:08:22.222 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: Close connection
+2019-03-21 15:08:22.222 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager shut down
+2019-03-21 15:16:17.946 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+2019-03-21 15:16:17.955 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+2019-03-21 15:16:17.959 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}->http://193.112.47.47:3000][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2019-03-21 15:16:17.970 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {}->http://193.112.47.47:3000][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2019-03-21 15:16:17.971 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {}->http://193.112.47.47:3000
+2019-03-21 15:16:17.973 [main] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to /193.112.47.47:3000
+2019-03-21 15:16:18.096 [main] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 192.168.43.9:62491<->193.112.47.47:3000
+2019-03-21 15:16:18.097 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 6000
+2019-03-21 15:16:18.097 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request POST /api/Trader HTTP/1.1
+2019-03-21 15:16:18.097 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+2019-03-21 15:16:18.097 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+2019-03-21 15:16:18.098 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> POST /api/Trader HTTP/1.1
+2019-03-21 15:16:18.099 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Content-Length: 84
+2019-03-21 15:16:18.099 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+2019-03-21 15:16:18.099 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Host: 193.112.47.47:3000
+2019-03-21 15:16:18.099 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Connection: Keep-Alive
+2019-03-21 15:16:18.099 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_202)
+2019-03-21 15:16:18.099 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+2019-03-21 15:16:18.099 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "POST /api/Trader HTTP/1.1[\r][\n]"
+2019-03-21 15:16:18.099 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Content-Length: 84[\r][\n]"
+2019-03-21 15:16:18.099 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Content-Type: application/x-www-form-urlencoded; charset=UTF-8[\r][\n]"
+2019-03-21 15:16:18.099 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Host: 193.112.47.47:3000[\r][\n]"
+2019-03-21 15:16:18.099 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2019-03-21 15:16:18.099 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_202)[\r][\n]"
+2019-03-21 15:16:18.099 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2019-03-21 15:16:18.099 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "[\r][\n]"
+2019-03-21 15:16:18.100 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "%24class=org.example.mynetwork.Trader&firstName=li&lastName=shen&tradeId=15715861763"
+2019-03-21 15:16:20.615 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2019-03-21 15:16:20.615 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Vary: Origin, Accept-Encoding[\r][\n]"
+2019-03-21 15:16:20.615 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Access-Control-Allow-Credentials: true[\r][\n]"
+2019-03-21 15:16:20.616 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "X-XSS-Protection: 1; mode=block[\r][\n]"
+2019-03-21 15:16:20.616 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "X-Frame-Options: DENY[\r][\n]"
+2019-03-21 15:16:20.616 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "X-Download-Options: noopen[\r][\n]"
+2019-03-21 15:16:20.616 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "X-Content-Type-Options: nosniff[\r][\n]"
+2019-03-21 15:16:20.617 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2019-03-21 15:16:20.617 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Length: 100[\r][\n]"
+2019-03-21 15:16:20.617 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "ETag: W/"64-zLZfCTcnMrcWaNJqS5/3csnuF7Y"[\r][\n]"
+2019-03-21 15:16:20.617 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Date: Thu, 21 Mar 2019 07:16:20 GMT[\r][\n]"
+2019-03-21 15:16:20.618 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+2019-03-21 15:16:20.618 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+2019-03-21 15:16:20.618 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "{"$class":"org.example.mynetwork.Trader","tradeId":"15715861763","firstName":"li","lastName":"shen"}"
+2019-03-21 15:16:20.623 [main] DEBUG org.apache.http.headers - http-outgoing-0 << HTTP/1.1 200 OK
+2019-03-21 15:16:20.623 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Vary: Origin, Accept-Encoding
+2019-03-21 15:16:20.623 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Access-Control-Allow-Credentials: true
+2019-03-21 15:16:20.623 [main] DEBUG org.apache.http.headers - http-outgoing-0 << X-XSS-Protection: 1; mode=block
+2019-03-21 15:16:20.623 [main] DEBUG org.apache.http.headers - http-outgoing-0 << X-Frame-Options: DENY
+2019-03-21 15:16:20.623 [main] DEBUG org.apache.http.headers - http-outgoing-0 << X-Download-Options: noopen
+2019-03-21 15:16:20.623 [main] DEBUG org.apache.http.headers - http-outgoing-0 << X-Content-Type-Options: nosniff
+2019-03-21 15:16:20.623 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Type: application/json; charset=utf-8
+2019-03-21 15:16:20.623 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Length: 100
+2019-03-21 15:16:20.623 [main] DEBUG org.apache.http.headers - http-outgoing-0 << ETag: W/"64-zLZfCTcnMrcWaNJqS5/3csnuF7Y"
+2019-03-21 15:16:20.623 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Date: Thu, 21 Mar 2019 07:16:20 GMT
+2019-03-21 15:16:20.623 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Connection: keep-alive
+2019-03-21 15:16:20.625 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+2019-03-21 15:16:20.628 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 0][route: {}->http://193.112.47.47:3000] can be kept alive indefinitely
+2019-03-21 15:16:20.628 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 0
+2019-03-21 15:16:20.628 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {}->http://193.112.47.47:3000][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2019-03-21 15:16:20.628 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager is shutting down
+2019-03-21 15:16:20.628 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: Close connection
+2019-03-21 15:16:20.629 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager shut down
+2019-03-21 16:18:01.711 [http-nio-80-exec-8] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-03-21 16:18:01.829 [http-nio-80-exec-9] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-03-21 16:18:01.835 [http-nio-80-exec-9] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2019-03-21 16:18:01.853 [http-nio-80-exec-9] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2019-03-21 16:18:01.859 [http-nio-80-exec-9] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-03-21 16:18:01.862 [http-nio-80-exec-9] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-03-21 16:18:04.243 [http-nio-80-exec-5] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-03-21 16:18:04.247 [http-nio-80-exec-5] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2019-03-21 16:18:04.249 [http-nio-80-exec-5] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2019-03-21 16:18:04.257 [http-nio-80-exec-5] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-03-21 16:18:04.261 [http-nio-80-exec-5] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-03-21 16:18:04.264 [http-nio-80-exec-5] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-03-21 16:18:04.359 [http-nio-80-exec-6] DEBUG org.hibernate.SQL - select count(user0_.id) as col_0_0_ from tb_user user0_
+2019-03-21 16:18:04.362 [http-nio-80-exec-6] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ limit ?
+2019-03-21 16:18:04.415 [http-nio-80-exec-6] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2019-03-21 16:18:04.417 [http-nio-80-exec-6] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2019-03-21 16:18:06.677 [http-nio-80-exec-9] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-03-21 16:18:06.680 [http-nio-80-exec-9] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2019-03-21 16:18:06.682 [http-nio-80-exec-9] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2019-03-21 16:18:06.686 [http-nio-80-exec-9] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-03-21 16:18:06.689 [http-nio-80-exec-9] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-03-21 16:18:06.690 [http-nio-80-exec-9] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-03-21 16:18:06.742 [http-nio-80-exec-8] DEBUG org.hibernate.SQL - select count(role0_.id) as col_0_0_ from tb_role role0_
+2019-03-21 16:18:06.743 [http-nio-80-exec-8] DEBUG org.hibernate.SQL - select role0_.id as id1_1_, role0_.create_time as create_t2_1_, role0_.description as descript3_1_, role0_.name as name4_1_, role0_.role_key as role_key5_1_, role0_.status as status6_1_, role0_.update_time as update_t7_1_ from tb_role role0_ limit ?
+2019-03-21 16:18:06.745 [http-nio-80-exec-8] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2019-03-21 16:18:09.389 [http-nio-80-exec-5] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-03-21 16:18:09.391 [http-nio-80-exec-5] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2019-03-21 16:18:09.392 [http-nio-80-exec-5] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2019-03-21 16:18:09.567 [http-nio-80-exec-5] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-03-21 16:18:09.570 [http-nio-80-exec-5] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-03-21 16:18:09.571 [http-nio-80-exec-5] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-03-21 16:18:09.619 [http-nio-80-exec-4] DEBUG org.hibernate.SQL - select count(resource0_.id) as col_0_0_ from tb_resource resource0_
+2019-03-21 16:18:09.620 [http-nio-80-exec-4] DEBUG org.hibernate.SQL - select resource0_.id as id1_0_, resource0_.create_time as create_t2_0_, resource0_.description as descript3_0_, resource0_.icon as icon4_0_, resource0_.is_hide as is_hide5_0_, resource0_.level as level6_0_, resource0_.name as name7_0_, resource0_.parent_id as parent_13_0_, resource0_.sort as sort8_0_, resource0_.source_key as source_k9_0_, resource0_.source_url as source_10_0_, resource0_.type as type11_0_, resource0_.update_time as update_12_0_ from tb_resource resource0_ limit ?
+2019-03-21 16:18:36.982 [http-nio-80-exec-7] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-03-21 16:18:36.983 [http-nio-80-exec-7] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2019-03-21 16:18:36.984 [http-nio-80-exec-7] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2019-03-21 16:18:36.986 [http-nio-80-exec-7] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-03-21 16:18:36.988 [http-nio-80-exec-7] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-03-21 16:18:36.990 [http-nio-80-exec-7] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-03-21 16:18:37.031 [http-nio-80-exec-3] DEBUG org.hibernate.SQL - select count(role0_.id) as col_0_0_ from tb_role role0_
+2019-03-21 16:18:37.032 [http-nio-80-exec-3] DEBUG org.hibernate.SQL - select role0_.id as id1_1_, role0_.create_time as create_t2_1_, role0_.description as descript3_1_, role0_.name as name4_1_, role0_.role_key as role_key5_1_, role0_.status as status6_1_, role0_.update_time as update_t7_1_ from tb_role role0_ limit ?
+2019-03-21 16:18:37.034 [http-nio-80-exec-3] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2019-03-21 16:18:38.098 [http-nio-80-exec-10] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-03-21 16:18:38.100 [http-nio-80-exec-10] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2019-03-21 16:18:38.101 [http-nio-80-exec-10] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2019-03-21 16:18:38.111 [http-nio-80-exec-10] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-03-21 16:18:38.115 [http-nio-80-exec-10] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-03-21 16:18:38.117 [http-nio-80-exec-10] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-03-21 16:18:38.151 [http-nio-80-exec-1] DEBUG org.hibernate.SQL - select count(resource0_.id) as col_0_0_ from tb_resource resource0_
+2019-03-21 16:18:38.152 [http-nio-80-exec-1] DEBUG org.hibernate.SQL - select resource0_.id as id1_0_, resource0_.create_time as create_t2_0_, resource0_.description as descript3_0_, resource0_.icon as icon4_0_, resource0_.is_hide as is_hide5_0_, resource0_.level as level6_0_, resource0_.name as name7_0_, resource0_.parent_id as parent_13_0_, resource0_.sort as sort8_0_, resource0_.source_key as source_k9_0_, resource0_.source_url as source_10_0_, resource0_.type as type11_0_, resource0_.update_time as update_12_0_ from tb_resource resource0_ limit ?
+2019-03-21 16:18:40.805 [http-nio-80-exec-6] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-03-21 16:18:40.807 [http-nio-80-exec-6] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2019-03-21 16:18:40.807 [http-nio-80-exec-6] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?
+2019-03-21 16:18:40.810 [http-nio-80-exec-6] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-03-21 16:18:40.812 [http-nio-80-exec-6] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-03-21 16:18:40.813 [http-nio-80-exec-6] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ where user0_.user_name=?
+2019-03-21 16:18:40.851 [http-nio-80-exec-2] DEBUG org.hibernate.SQL - select count(user0_.id) as col_0_0_ from tb_user user0_
+2019-03-21 16:18:40.852 [http-nio-80-exec-2] DEBUG org.hibernate.SQL - select user0_.id as id1_3_, user0_.address as address2_3_, user0_.birthday as birthday3_3_, user0_.create_time as create_t4_3_, user0_.delete_status as delete_s5_3_, user0_.description as descript6_3_, user0_.email as email7_3_, user0_.locked as locked8_3_, user0_.nick_name as nick_nam9_3_, user0_.password as passwor10_3_, user0_.sex as sex11_3_, user0_.telephone as telepho12_3_, user0_.update_time as update_13_3_, user0_.user_name as user_na14_3_ from tb_user user0_ limit ?
+2019-03-21 16:18:40.854 [http-nio-80-exec-2] DEBUG org.hibernate.SQL - select roles0_.user_id as user_id1_4_0_, roles0_.role_id as role_id2_4_0_, role1_.id as id1_1_1_, role1_.create_time as create_t2_1_1_, role1_.description as descript3_1_1_, role1_.name as name4_1_1_, role1_.role_key as role_key5_1_1_, role1_.status as status6_1_1_, role1_.update_time as update_t7_1_1_ from tb_user_role roles0_ inner join tb_role role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2019-03-21 16:18:40.855 [http-nio-80-exec-2] DEBUG org.hibernate.SQL - select resources0_.role_id as role_id1_2_0_, resources0_.resource_id as resource2_2_0_, resource1_.id as id1_0_1_, resource1_.create_time as create_t2_0_1_, resource1_.description as descript3_0_1_, resource1_.icon as icon4_0_1_, resource1_.is_hide as is_hide5_0_1_, resource1_.level as level6_0_1_, resource1_.name as name7_0_1_, resource1_.parent_id as parent_13_0_1_, resource1_.sort as sort8_0_1_, resource1_.source_key as source_k9_0_1_, resource1_.source_url as source_10_0_1_, resource1_.type as type11_0_1_, resource1_.update_time as update_12_0_1_ from tb_role_resource resources0_ inner join tb_resource resource1_ on resources0_.resource_id=resource1_.id where resources0_.role_id=?

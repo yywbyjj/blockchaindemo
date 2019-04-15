@@ -1,0 +1,81 @@
+2019-03-25 18:16:58.164 [main] DEBUG net.sppan.base.config.listener.ApplicationEventListener - 初始化环境变量
+2019-03-25 18:16:58.250 [main] INFO  net.sppan.base.Application - Starting Application on DESKTOP-HR8FSOR with PID 18040 (D:\GitProject\springboot_authority\target\classes started by yywbyjj in D:\GitProject\springboot_authority)
+2019-03-25 18:16:58.251 [main] DEBUG net.sppan.base.Application - Running with Spring Boot v1.4.2.RELEASE, Spring v4.3.4.RELEASE
+2019-03-25 18:16:58.251 [main] INFO  net.sppan.base.Application - No active profile set, falling back to default profiles: default
+2019-03-25 18:16:58.324 [main] DEBUG net.sppan.base.config.listener.ApplicationEventListener - 初始化环境变量完成
+2019-03-25 18:16:58.385 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2019-03-25 18:16:59.525 [main] DEBUG net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from InputStream
+2019-03-25 18:16:59.547 [main] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xmlns:xsi
+2019-03-25 18:16:59.547 [main] DEBUG net.sf.ehcache.config.BeanHandler - Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
+2019-03-25 18:16:59.547 [main] DEBUG net.sf.ehcache.config.DiskStoreConfiguration - Disk Store Path: C:\Users\yywbyjj\AppData\Local\Temp\
+2019-03-25 18:16:59.557 [main] DEBUG net.sf.ehcache.util.PropertyUtil - propertiesString is null.
+2019-03-25 18:16:59.560 [main] DEBUG net.sf.ehcache.config.ConfigurationHelper - No CacheManagerEventListenerFactory class specified. Skipping...
+2019-03-25 18:16:59.582 [main] DEBUG net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+2019-03-25 18:16:59.582 [main] DEBUG net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+2019-03-25 18:16:59.583 [main] DEBUG net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+2019-03-25 18:16:59.588 [main] DEBUG net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+2019-03-25 18:16:59.588 [main] DEBUG net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+2019-03-25 18:16:59.588 [main] DEBUG net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+2019-03-25 18:16:59.588 [main] WARN  net.sf.ehcache.config.CacheConfiguration - Configuration problem for cache resourceCache: MaxEntriesLocalHeap equal or greater than MaxEntriesLocalDisk. This will result in useless disk storage.
+2019-03-25 18:16:59.612 [main] DEBUG net.sf.ehcache.DiskStorePathManager - Using diskstore path C:\Users\yywbyjj\AppData\Local\Temp
+2019-03-25 18:16:59.612 [main] DEBUG net.sf.ehcache.DiskStorePathManager - Holding exclusive lock on C:\Users\yywbyjj\AppData\Local\Temp\.ehcache-diskstore.lock
+2019-03-25 18:16:59.613 [main] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory - Failed to delete file resource%0043ache.index
+2019-03-25 18:16:59.616 [main] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory - Matching data file missing (or empty) for index file. Deleting index file C:\Users\yywbyjj\AppData\Local\Temp\resource%0043ache.index
+2019-03-25 18:16:59.616 [main] DEBUG net.sf.ehcache.store.disk.DiskStorageFactory - Failed to delete file resource%0043ache.index
+2019-03-25 18:16:59.640 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE
+2019-03-25 18:16:59.641 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE_BYTES
+2019-03-25 18:16:59.641 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: WRITER_QUEUE_LENGTH
+2019-03-25 18:16:59.641 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: REMOTE_SIZE
+2019-03-25 18:16:59.641 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Pass-Through Statistic: LAST_REJOIN_TIMESTAMP
+2019-03-25 18:16:59.647 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_GET
+2019-03-25 18:16:59.648 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_PUT
+2019-03-25 18:16:59.648 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: OFFHEAP_REMOVE
+2019-03-25 18:16:59.649 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_COMMIT
+2019-03-25 18:16:59.649 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_ROLLBACK
+2019-03-25 18:16:59.649 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: XA_RECOVERY
+2019-03-25 18:16:59.649 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: CLUSTER_EVENT
+2019-03-25 18:16:59.649 [main] DEBUG net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl - Mocking Operation Statistic: NONSTOP
+2019-03-25 18:16:59.652 [main] DEBUG net.sf.ehcache.Cache - Initialised cache: resourceCache
+2019-03-25 18:16:59.652 [main] DEBUG net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured. Skipping for 'resourceCache'.
+2019-03-25 18:16:59.652 [main] DEBUG net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured for defaultCache. Skipping for 'resourceCache'.
+2019-03-25 18:17:00.081 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-03-25 18:17:00.847 [main] DEBUG org.hibernate.SQL - alter table tb_resource drop foreign key FKf5ra2gn0xedeida2op8097sr5
+2019-03-25 18:17:00.884 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table tb_resource drop foreign key FKf5ra2gn0xedeida2op8097sr5
+2019-03-25 18:17:00.884 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - Table 'electronic_license_test.tb_resource' doesn't exist
+2019-03-25 18:17:00.884 [main] DEBUG org.hibernate.SQL - alter table tb_role_resource drop foreign key FK868kc8iic48ilv5npa80ut6qo
+2019-03-25 18:17:00.918 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table tb_role_resource drop foreign key FK868kc8iic48ilv5npa80ut6qo
+2019-03-25 18:17:00.918 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - Table 'electronic_license_test.tb_role_resource' doesn't exist
+2019-03-25 18:17:00.918 [main] DEBUG org.hibernate.SQL - alter table tb_role_resource drop foreign key FK7ffc7h6obqxflhj1aq1mk20jk
+2019-03-25 18:17:00.952 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table tb_role_resource drop foreign key FK7ffc7h6obqxflhj1aq1mk20jk
+2019-03-25 18:17:00.952 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - Table 'electronic_license_test.tb_role_resource' doesn't exist
+2019-03-25 18:17:00.952 [main] DEBUG org.hibernate.SQL - alter table tb_user_role drop foreign key FKea2ootw6b6bb0xt3ptl28bymv
+2019-03-25 18:17:00.985 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table tb_user_role drop foreign key FKea2ootw6b6bb0xt3ptl28bymv
+2019-03-25 18:17:00.985 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - Table 'electronic_license_test.tb_user_role' doesn't exist
+2019-03-25 18:17:00.985 [main] DEBUG org.hibernate.SQL - alter table tb_user_role drop foreign key FK7vn3h53d0tqdimm8cp45gc0kl
+2019-03-25 18:17:01.020 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table tb_user_role drop foreign key FK7vn3h53d0tqdimm8cp45gc0kl
+2019-03-25 18:17:01.021 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - Table 'electronic_license_test.tb_user_role' doesn't exist
+2019-03-25 18:17:01.021 [main] DEBUG org.hibernate.SQL - drop table if exists tb_resource
+2019-03-25 18:17:01.091 [main] DEBUG org.hibernate.SQL - drop table if exists tb_role
+2019-03-25 18:17:01.156 [main] DEBUG org.hibernate.SQL - drop table if exists tb_role_resource
+2019-03-25 18:17:01.222 [main] DEBUG org.hibernate.SQL - drop table if exists tb_user
+2019-03-25 18:17:01.289 [main] DEBUG org.hibernate.SQL - drop table if exists tb_user_role
+2019-03-25 18:17:01.356 [main] DEBUG org.hibernate.SQL - create table tb_resource (id integer not null auto_increment, create_time datetime, description varchar(255), icon varchar(255), is_hide integer, level integer, name varchar(255), sort integer, source_key varchar(255), source_url varchar(255), type integer, update_time datetime, parent_id integer, primary key (id))
+2019-03-25 18:17:01.442 [main] DEBUG org.hibernate.SQL - create table tb_role (id integer not null auto_increment, create_time datetime, description varchar(255), name varchar(255), role_key varchar(255), status integer, update_time datetime, primary key (id))
+2019-03-25 18:17:01.529 [main] DEBUG org.hibernate.SQL - create table tb_role_resource (role_id integer not null, resource_id integer not null, primary key (role_id, resource_id))
+2019-03-25 18:17:01.614 [main] DEBUG org.hibernate.SQL - create table tb_user (id integer not null auto_increment, address varchar(255), birthday datetime, create_time datetime, delete_status integer, description varchar(255), email varchar(255), locked integer, nick_name varchar(255), password varchar(255), sex integer, telephone varchar(255), update_time datetime, user_name varchar(255), primary key (id))
+2019-03-25 18:17:01.697 [main] DEBUG org.hibernate.SQL - create table tb_user_role (user_id integer not null, role_id integer not null, primary key (user_id, role_id))
+2019-03-25 18:17:01.780 [main] DEBUG org.hibernate.SQL - alter table tb_resource add constraint FKf5ra2gn0xedeida2op8097sr5 foreign key (parent_id) references tb_resource (id)
+2019-03-25 18:17:01.896 [main] DEBUG org.hibernate.SQL - alter table tb_role_resource add constraint FK868kc8iic48ilv5npa80ut6qo foreign key (resource_id) references tb_resource (id)
+2019-03-25 18:17:02.004 [main] DEBUG org.hibernate.SQL - alter table tb_role_resource add constraint FK7ffc7h6obqxflhj1aq1mk20jk foreign key (role_id) references tb_role (id)
+2019-03-25 18:17:02.110 [main] DEBUG org.hibernate.SQL - alter table tb_user_role add constraint FKea2ootw6b6bb0xt3ptl28bymv foreign key (role_id) references tb_role (id)
+2019-03-25 18:17:02.217 [main] DEBUG org.hibernate.SQL - alter table tb_user_role add constraint FK7vn3h53d0tqdimm8cp45gc0kl foreign key (user_id) references tb_user (id)
+2019-03-25 18:17:03.207 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2019-03-25 18:17:03.208 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.6
+2019-03-25 18:17:03.287 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-03-25 18:17:04.231 [main] DEBUG net.sppan.base.config.listener.ApplicationEventListener - 应用刷新
+2019-03-25 18:17:04.236 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2019-03-25 18:17:04.242 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-80]
+2019-03-25 18:17:04.250 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2019-03-25 18:17:04.262 [main] DEBUG net.sppan.base.config.listener.ApplicationEventListener - 应用已启动完成
+2019-03-25 18:17:04.263 [main] INFO  net.sppan.base.Application - Started Application in 6.296 seconds (JVM running for 7.517)
+2019-03-25 18:17:04.263 [main] DEBUG net.sppan.base.Application - 启动成功
