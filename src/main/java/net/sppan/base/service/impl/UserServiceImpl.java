@@ -2,28 +2,22 @@ package net.sppan.base.service.impl;
 
 import java.util.*;
 
-import com.alibaba.druid.support.json.JSONUtils;
 import com.alibaba.fastjson.JSON;
-import net.sppan.base.common.JsonResult;
 import net.sppan.base.common.utils.HttpClientResult;
 import net.sppan.base.common.utils.HttpClientUtils;
 import net.sppan.base.common.utils.MD5Utils;
 import net.sppan.base.common.utils.UuidUtils;
-import net.sppan.base.dao.BUserDao;
 import net.sppan.base.dao.IUserDao;
 import net.sppan.base.dao.support.IBaseDao;
-import net.sppan.base.entity.BlockChainUser;
 import net.sppan.base.entity.Role;
 import net.sppan.base.entity.User;
-import net.sppan.base.service.BUserService;
-import net.sppan.base.service.IRoleService;
-import net.sppan.base.service.IUserService;
+import net.sppan.base.entity.enu.StateCode;
+import net.sppan.base.service.*;
 import net.sppan.base.service.support.impl.BaseServiceImpl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.transaction.interceptor.TransactionAspectSupport;
 import org.springframework.util.Assert;
 
 /**
@@ -42,9 +36,6 @@ public class UserServiceImpl extends BaseServiceImpl<User, String> implements IU
 	
 	@Autowired
 	private IRoleService roleService;
-
-	@Autowired
-	private BUserDao bUserDao;
 	
 	@Override
 	public IBaseDao<User, String> getBaseDao() {
@@ -75,42 +66,31 @@ public class UserServiceImpl extends BaseServiceImpl<User, String> implements IU
 	@Transactional(rollbackFor = Exception.class)
 	public void saveUser(User user) throws Exception{
 		if (user.getId()==null){
-			BlockChainUser buser = new BlockChainUser();
-			buser.setId(UuidUtils.generateUuid());
-			buser.setTradeId(UuidUtils.generateUuid());
-			buser.setUserId(UuidUtils.generateUuid());
-			buser.setUserName(user.getUserName());
-			buser.setNickName(user.getNickName());
-			user.setId(buser.getUserId());
+			user.setId(UuidUtils.generateUuid());
 			user.setCreateTime(new Date());
 			user.setUpdateTime(new Date());
 			user.setDeleteStatus(0);
 			user.setPassword(MD5Utils.md5("111111"));
-			bUserDao.save(buser);
 			userDao.save(user);
-			if (userDao.findOne(user.getId())==null||bUserDao.findOne(buser.getId())==null){
-				throw new RuntimeException();
+			if (userDao.findOne(user.getId())==null){
+				throw new NoUserException("没有查到改用户的信息");
 			}
-			HttpClientResult result = saveBlockChainUser(buser);
-			if (result.getCode()!=200){
-				throw new RuntimeException();
+			HttpClientResult result = saveBlockChainUser(user);
+			if (result.getCode()!= StateCode.SUCCESSCODE){
+				throw new NoClientBlockChainException("连接区块链错误");
 			}
 		}else {
-			BlockChainUser buser = bUserDao.findByUserId(user.getId());
-			buser.setUserName(user.getUserName());
-			buser.setNickName(user.getNickName());
-			bUserDao.save(buser);
 			updateUser(user);
-			updateBlockChainUser(buser);
+			updateBlockChainUser(user);
 		}
 	}
 
-	public HttpClientResult saveBlockChainUser(BlockChainUser buser) throws Exception{
+	public HttpClientResult saveBlockChainUser(User user) throws Exception{
 		Map<String,String> params = new HashMap<>();
 		params.put("$class","org.example.mynetwork.Trader");
-		params.put("tradeId",buser.getTradeId());
-		params.put("userName",buser.getUserName());
-		params.put("nickName",buser.getNickName());
+		params.put("tradeId",user.getId());
+		params.put("userName",user.getUserName());
+		params.put("nickName",user.getNickName());
 		HttpClientResult result = HttpClientUtils.doPost("http://193.112.47.47:3000/api/Trader",params);
 		return result;
 	}
@@ -120,11 +100,11 @@ public class UserServiceImpl extends BaseServiceImpl<User, String> implements IU
 		return result;
 	}
 
-	public void updateBlockChainUser(BlockChainUser buser) throws Exception{
-		HttpClientResult result = HttpClientUtils.doGet("http://193.112.47.47:3000/api/Trader/"+buser.getTradeId());
-		delBlockChainUser(buser.getTradeId());
+	public void updateBlockChainUser(User user) throws Exception{
+		HttpClientResult result = HttpClientUtils.doGet("http://193.112.47.47:3000/api/Trader/"+user.getId());
+		delBlockChainUser(user.getId());
 		try {
-			saveBlockChainUser(buser);
+			saveBlockChainUser(user);
 		} catch (Exception e){
 			e.printStackTrace();
 			Map map = (Map) JSON.parse(result.getContent());
@@ -140,14 +120,12 @@ public class UserServiceImpl extends BaseServiceImpl<User, String> implements IU
 	@Override
 	@Transactional(rollbackFor = Exception.class)
 	public void delete(String id) throws Exception{
-		String tradeId = bUserDao.findByUserId(id).getTradeId();
 		User user = find(id);
 		Assert.state(!"admin".equals(user.getUserName()),"超级管理员用户不能删除");
 		super.delete(id);
-		bUserDao.deleteByUserId(id);
-		HttpClientResult result = delBlockChainUser(tradeId);
-		if (result.getCode()!=204){
-			throw new RuntimeException();
+		HttpClientResult result = delBlockChainUser(id);
+		if (result.getCode()!=StateCode.DELSUCCESSCODE){
+			throw new NoClientBlockChainException("连接区块链错误");
 		}
 	}
 
