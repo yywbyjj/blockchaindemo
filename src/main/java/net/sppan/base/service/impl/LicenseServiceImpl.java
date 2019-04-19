@@ -8,7 +8,9 @@ import net.sppan.base.dao.support.IBaseDao;
 import net.sppan.base.entity.License;
 import net.sppan.base.entity.enu.LicenseCheckCode;
 import net.sppan.base.entity.enu.MainExchangeCode;
+import net.sppan.base.entity.enu.StateCode;
 import net.sppan.base.service.LicenseService;
+import net.sppan.base.service.NoClientBlockChainException;
 import net.sppan.base.service.support.impl.BaseServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -52,5 +54,18 @@ public class LicenseServiceImpl extends BaseServiceImpl<License,String> implemen
         params.put("quantity","0");
         params.put("owner","resource:org.example.mynetwork.Trader#"+license.getUserId());
         HttpClientUtils.doPost("http://193.112.47.47:3000/api/Commodity",params);
+    }
+
+    @Override
+    @Transactional(rollbackFor = Exception.class)
+    public void deleteLicense(String id) throws Exception{
+        String licenseHash = licenseDao.findOne(id).getLicenseHash();
+        licenseDao.delete(id);
+        System.out.println(licenseHash);
+        HttpClientResult result = HttpClientUtils.doDelete("http://193.112.47.47:3000/api/Commodity/"+licenseHash);
+        System.out.println(result.getCode());
+        if (result.getCode() != StateCode.DELSUCCESSCODE){
+            throw new NoClientBlockChainException("连接到区块链出错");
+        }
     }
 }

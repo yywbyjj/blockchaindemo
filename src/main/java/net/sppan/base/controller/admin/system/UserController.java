@@ -2,17 +2,13 @@ package net.sppan.base.controller.admin.system;
 
 import java.util.*;
 
-import com.alibaba.druid.support.json.JSONUtils;
 import com.alibaba.fastjson.JSON;
 import net.sppan.base.common.JsonResult;
 import net.sppan.base.common.utils.HttpClientResult;
 import net.sppan.base.common.utils.HttpClientUtils;
-import net.sppan.base.common.utils.UuidUtils;
 import net.sppan.base.controller.BaseController;
-import net.sppan.base.entity.BlockChainUser;
 import net.sppan.base.entity.Role;
 import net.sppan.base.entity.User;
-import net.sppan.base.service.BUserService;
 import net.sppan.base.service.IRoleService;
 import net.sppan.base.service.IUserService;
 import net.sppan.base.service.specification.SimpleSpecificationBuilder;
@@ -36,8 +32,6 @@ public class UserController extends BaseController {
 	private IUserService userService;
 	@Autowired
 	private IRoleService roleService;
-	@Autowired
-	private BUserService bUserService;
 
 	@RequestMapping(value = { "/", "/index" })
 	public String index() {

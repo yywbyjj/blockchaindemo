@@ -8,6 +8,7 @@ import net.sppan.base.entity.User;
 import net.sppan.base.entity.enu.LicenseCheckCode;
 import net.sppan.base.service.IUserService;
 import net.sppan.base.service.LicenseService;
+import net.sppan.base.service.NoClientBlockChainException;
 import net.sppan.base.service.specification.SimpleSpecificationBuilder;
 import net.sppan.base.service.specification.SpecificationOperator;
 import org.apache.commons.lang3.StringUtils;
@@ -70,6 +71,19 @@ public class LicenseController extends BaseController {
     public JsonResult checkPass(String id) throws Exception{
         License license = licenseService.find(id);
         licenseService.checkPassLicense(license);
+        return JsonResult.success();
+    }
+
+    @PostMapping(value = "/deleteLicense")
+    @ResponseBody
+    public JsonResult deleteLicense(String id){
+        try {
+            licenseService.deleteLicense(id);
+        }catch (NoClientBlockChainException e){
+            return JsonResult.failure(e.getMessage());
+        }catch (Exception e){
+            return JsonResult.failure("未知的错误");
+        }
         return JsonResult.success();
     }
 }

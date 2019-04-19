@@ -176,34 +176,9 @@
        	    	  }
         	    });
         }
-        <#--function add(){-->
-        	<#--layer.open({-->
-        	      <#--type: 2,-->
-        	      <#--title: '用户添加',-->
-        	      <#--shadeClose: true,-->
-        	      <#--shade: false,-->
-        	      <#--area: ['893px', '600px'],-->
-        	      <#--content: '${ctx!}/admin/user/add',-->
-        	      <#--end: function(index){-->
-        	    	  <#--$('#table_list').bootstrapTable("refresh");-->
-       	    	  <#--}-->
-        	    <#--});-->
-        <#--}-->
-        <#--function grant(id){-->
-        	<#--layer.open({-->
-        	      <#--type: 2,-->
-        	      <#--title: '关联角色',-->
-        	      <#--shadeClose: true,-->
-        	      <#--shade: false,-->
-        	      <#--area: ['893px', '600px'],-->
-        	      <#--content: '${ctx!}/admin/user/grant/'  + id,-->
-        	      <#--end: function(index){-->
-        	    	  <#--$('#table_list').bootstrapTable("refresh");-->
-       	    	  <#--}-->
-        	    <#--});-->
-        <#--}-->
+
         function checkPass(id){
-        	layer.confirm('确定通过审核吗?这将会把数据记录到区块链中', {icon: 3, title:'提示'}, function(index){
+        	layer.confirm('确定通过审核吗?这将会把数据同步到区块链中', {icon: 3, title:'提示'}, function(index){
         		$.ajax({
     	    		   type: "POST",
     	    		   dataType: "json",
@@ -216,6 +191,22 @@
     	    		   }
     	    	});
        		});
+        }
+
+        function del(id){
+            layer.confirm('确定删除吗?这将会把数据同步到区块链中', {icon: 3, title:'提示'}, function(index){
+                $.ajax({
+                    type: "POST",
+                    dataType: "json",
+                    url: "${ctx!}/admin/license/deleteLicense?id="+id,
+                    success: function(msg){
+                        layer.msg(msg.message,function(){
+                            $('#table_list').bootstrapTable("refresh");
+                            layer.close(index);
+                        });
+                    }
+                });
+            });
         }
         
         function detailFormatter(index, row) {

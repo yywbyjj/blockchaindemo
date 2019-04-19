@@ -23,4 +23,9 @@ public interface LicenseService extends IBaseService<License,String> {
      * 审核通过并且将数据记录到区块链中
      */
     void checkPassLicense(License license) throws Exception;
+
+    /**
+     * 删除证件照
+     */
+    void deleteLicense(String id) throws Exception;
 }
