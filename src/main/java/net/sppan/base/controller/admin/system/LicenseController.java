@@ -1,5 +1,6 @@
 package net.sppan.base.controller.admin.system;
 
+import com.alibaba.fastjson.JSON;
 import net.sppan.base.common.JsonResult;
 import net.sppan.base.common.utils.MD5Utils;
 import net.sppan.base.controller.BaseController;
@@ -12,11 +13,16 @@ import net.sppan.base.service.NoClientBlockChainException;
 import net.sppan.base.service.specification.SimpleSpecificationBuilder;
 import net.sppan.base.service.specification.SpecificationOperator;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.shiro.SecurityUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * @author yangkj
@@ -40,10 +46,17 @@ public class LicenseController extends BaseController {
     @RequestMapping(value = { "/list" })
     @ResponseBody
     public Page<License> list() {
+        User user = (User) SecurityUtils.getSubject().getPrincipal();
+        List<String> names = new ArrayList<>();
+        if (!user.getRoles().isEmpty()){
+            names = user.getRoles().stream().map(x -> {
+                String name = x.getName();
+                return name;
+            }).collect(Collectors.toList());
+        }
         SimpleSpecificationBuilder<License> builder = new SimpleSpecificationBuilder<License>();
-        String searchText = request.getParameter("searchText");
-        if(StringUtils.isNotBlank(searchText)){
-            builder.add("ordererName", SpecificationOperator.Operator.likeAll.name(), searchText);
+        if (!"00000000000000000000000000000000".equals(user.getId())){
+            builder.add("ordererName", SpecificationOperator.Operator.likeAll.name(), names.get(0));
         }
         Page<License> page = licenseService.findAll(builder.generateSpecification(), getPageRequest());
         return page;

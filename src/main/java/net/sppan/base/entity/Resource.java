@@ -97,7 +97,7 @@ public class Resource extends BaseEntity {
 	@JSONField(format = "yyyy-MM-dd HH:mm:ss")
 	private Date updateTime;
 
-	@ManyToOne(fetch = FetchType.LAZY)
+	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "parent_id")
 	private Resource parent;
 
