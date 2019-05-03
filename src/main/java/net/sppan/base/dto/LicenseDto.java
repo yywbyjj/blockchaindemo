@@ -12,17 +12,17 @@ public class LicenseDto {
     private Integer isDelete;
     private String userName;
 
-    public LicenseDto(String id, String licenseHash, String ordererName, String mainExchange, String userId, String photoUrl, Integer checkCode, Integer isDelete, String userName) {
-        this.id = id;
-        this.licenseHash = licenseHash;
-        this.ordererName = ordererName;
-        this.mainExchange = mainExchange;
-        this.userId = userId;
-        this.photoUrl = photoUrl;
-        this.checkCode = checkCode;
-        this.isDelete = isDelete;
-        this.userName = userName;
-    }
+//    public LicenseDto(String id, String licenseHash, String ordererName, String mainExchange, String userId, String photoUrl, Integer checkCode, Integer isDelete, String userName) {
+//        this.id = id;
+//        this.licenseHash = licenseHash;
+//        this.ordererName = ordererName;
+//        this.mainExchange = mainExchange;
+//        this.userId = userId;
+//        this.photoUrl = photoUrl;
+//        this.checkCode = checkCode;
+//        this.isDelete = isDelete;
+//        this.userName = userName;
+//    }
 
     public String getId() {
         return id;

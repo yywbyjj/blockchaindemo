@@ -110,6 +110,9 @@
 			        field: "id",
 			        sortable: true
 			    },{
+                    title: "用户名",
+                    field: "userName"
+                },{
 			        title: "证照Hash",
 			        field: "licenseHash"
 			    },{

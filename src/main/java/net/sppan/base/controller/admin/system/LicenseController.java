@@ -1,9 +1,9 @@
 package net.sppan.base.controller.admin.system;
 
-import com.alibaba.fastjson.JSON;
 import net.sppan.base.common.JsonResult;
-import net.sppan.base.common.utils.MD5Utils;
 import net.sppan.base.controller.BaseController;
+import net.sppan.base.dao.LicenseDao;
+import net.sppan.base.dto.LicenseDto;
 import net.sppan.base.entity.License;
 import net.sppan.base.entity.User;
 import net.sppan.base.entity.enu.LicenseCheckCode;
@@ -12,7 +12,6 @@ import net.sppan.base.service.LicenseService;
 import net.sppan.base.service.NoClientBlockChainException;
 import net.sppan.base.service.specification.SimpleSpecificationBuilder;
 import net.sppan.base.service.specification.SpecificationOperator;
-import org.apache.commons.lang3.StringUtils;
 import org.apache.shiro.SecurityUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -36,6 +35,9 @@ public class LicenseController extends BaseController {
     private LicenseService licenseService;
 
     @Autowired
+    private LicenseDao licenseDao;
+
+    @Autowired
     private IUserService userService;
 
     @RequestMapping(value = { "/", "/index" })
@@ -45,7 +47,7 @@ public class LicenseController extends BaseController {
 
     @RequestMapping(value = { "/list" })
     @ResponseBody
-    public Page<License> list() {
+    public Page<LicenseDto> list() {
         User user = (User) SecurityUtils.getSubject().getPrincipal();
         List<String> names = new ArrayList<>();
         if (!user.getRoles().isEmpty()){
@@ -54,11 +56,8 @@ public class LicenseController extends BaseController {
                 return name;
             }).collect(Collectors.toList());
         }
-        SimpleSpecificationBuilder<License> builder = new SimpleSpecificationBuilder<License>();
-        if (!"00000000000000000000000000000000".equals(user.getId())){
-            builder.add("ordererName", SpecificationOperator.Operator.likeAll.name(), names.get(0));
-        }
-        Page<License> page = licenseService.findAll(builder.generateSpecification(), getPageRequest());
+        String searchText = request.getParameter("searchText");
+        Page<LicenseDto> page = licenseDao.findAllLicense(names,searchText,getPageRequest());
         return page;
     }
 

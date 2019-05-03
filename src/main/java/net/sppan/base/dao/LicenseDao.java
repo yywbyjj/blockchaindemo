@@ -1,10 +1,15 @@
 package net.sppan.base.dao;
 
 import net.sppan.base.dao.support.IBaseDao;
+import net.sppan.base.dto.LicenseDto;
 import net.sppan.base.entity.License;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
+
+import java.util.List;
 
 /**
  * @author yangkj
@@ -19,4 +24,6 @@ public interface LicenseDao extends IBaseDao<License,String> {
     @Modifying
     @Query(value = "update License set checkCode=?1 where id=?2")
     void updateCheckById(Integer checkCode,String id);
+
+    Page<LicenseDto> findAllLicense(List<String> names,String searchText,Pageable pageable);
 }
