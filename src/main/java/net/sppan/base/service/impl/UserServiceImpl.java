@@ -81,16 +81,15 @@ public class UserServiceImpl extends BaseServiceImpl<User, String> implements IU
 			}
 		}else {
 			updateUser(user);
-			updateBlockChainUser(user);
+			HttpClientResult result = updateBlockChainUser(user);
+			if (result.getCode()!=StateCode.SUCCESSCODE){
+				throw new NoClientBlockChainException("连接区块链错误");
+			}
 		}
 	}
 
 	public HttpClientResult saveBlockChainUser(User user) throws Exception{
-		Map<String,String> params = new HashMap<>();
-		params.put("$class","org.example.mynetwork.Trader");
-		params.put("tradeId",user.getId());
-		params.put("userName",user.getUserName());
-		params.put("nickName",user.getNickName());
+		Map<String, String> params = getStringMap(user);
 		HttpClientResult result = HttpClientUtils.doPost("http://193.112.47.47:3000/api/Trader",params);
 		return result;
 	}
@@ -100,21 +99,20 @@ public class UserServiceImpl extends BaseServiceImpl<User, String> implements IU
 		return result;
 	}
 
-	public void updateBlockChainUser(User user) throws Exception{
-		HttpClientResult result = HttpClientUtils.doGet("http://193.112.47.47:3000/api/Trader/"+user.getId());
-		delBlockChainUser(user.getId());
-		try {
-			saveBlockChainUser(user);
-		} catch (Exception e){
-			e.printStackTrace();
-			Map map = (Map) JSON.parse(result.getContent());
-			Map<String,String> params = new HashMap<>();
-			params.put("$class","org.example.mynetwork.Trader");
-			params.put("tradeId",map.get("tradeId").toString());
-			params.put("userName",map.get("userName").toString());
-			params.put("nickName",map.get("nickName").toString());
-			HttpClientUtils.doPost("http://193.112.47.47:3000/api/Trader",params);
-		}
+	public HttpClientResult updateBlockChainUser(User user) throws Exception{
+		String id = user.getId();
+		Map<String, String> params = getStringMap(user);
+		HttpClientResult result = HttpClientUtils.doPut("http://193.112.47.47:3000/api/Trader/"+id, params);
+		return result;
+	}
+
+	private Map<String, String> getStringMap(User user) {
+		Map<String, String> params = new HashMap<>();
+		params.put("$class", "org.example.mynetwork.Trader");
+		params.put("tradeId", user.getId());
+		params.put("userName", user.getUserName());
+		params.put("nickName", user.getNickName());
+		return params;
 	}
 
 	@Override

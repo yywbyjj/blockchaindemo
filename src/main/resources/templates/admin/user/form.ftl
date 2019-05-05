@@ -25,18 +25,6 @@
             <div class="col-sm-12">
                 <div class="ibox float-e-margins">
                     <div class="ibox-title">
-                        <h5>jQuery Validate 简介</h5>
-                    </div>
-                    <div class="ibox-content">
-                        <p>jquery.validate.js 是一款优秀的jQuery表单验证插件。它具有如下特点：</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="ibox float-e-margins">
-                    <div class="ibox-title">
                         <h5>完整验证表单</h5>
                     </div>
                     <div class="ibox-content">
@@ -182,7 +170,7 @@
    	    		   url: "${ctx!}/admin/user/edit",
    	    		   data: $(form).serialize(),
    	    		   success: function(msg){
-	   	    			layer.msg(msg.message, {time: 2000},function(){
+	   	    			layer.msg(msg.message,function(){
 	   						var index = parent.layer.getFrameIndex(window.name); //先得到当前iframe层的索引
 	   						parent.layer.close(index); 
 	   					});
