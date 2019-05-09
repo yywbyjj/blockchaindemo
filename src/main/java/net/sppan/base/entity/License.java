@@ -25,7 +25,7 @@ public class License extends BaseEntity {
      * 电子证照类型
      * @see net.sppan.base.entity.enu.MainExchangeCode
      */
-    private String mainExchange;
+    private Integer mainExchange;
 
     private String userId;
 
@@ -63,11 +63,11 @@ public class License extends BaseEntity {
         this.ordererName = ordererName;
     }
 
-    public String getMainExchange() {
+    public Integer getMainExchange() {
         return mainExchange;
     }
 
-    public void setMainExchange(String mainExchange) {
+    public void setMainExchange(Integer mainExchange) {
         this.mainExchange = mainExchange;
     }
 

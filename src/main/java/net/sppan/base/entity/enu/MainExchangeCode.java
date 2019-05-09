@@ -9,9 +9,14 @@ import com.sun.xml.internal.bind.v2.TODO;
 public final class MainExchangeCode {
 
     /**
-     * 身份证
+     * 公安局
      */
-    public static final Integer IDCARD = 0;
+    public static final Integer PUBLICSECURITYBUREAU = 0;
+
+    /**
+     * 民政局
+     */
+    public static final Integer CIVILAFFAIRSBUREAU = 1;
 
     /**
      * TODO

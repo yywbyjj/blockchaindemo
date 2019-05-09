@@ -158,8 +158,12 @@
 			        field: "empty",
                     formatter: function (value, row, index) {
                     	var operateHtml = '<@shiro.hasPermission name="system:user:edit"><button class="btn btn-primary btn-xs" type="button" onclick="check(\''+row.id+'\')"><i class="fa fa-edit"></i>&nbsp;审核</button> &nbsp;</@shiro.hasPermission>';
-                    	operateHtml = operateHtml + '<@shiro.hasPermission name="system:user:deleteBatch"><button class="btn btn-danger btn-xs" type="button" onclick="del(\''+row.id+'\')"><i class="fa fa-remove"></i>&nbsp;删除</button> &nbsp;</@shiro.hasPermission>';
-                    	operateHtml = operateHtml + '<@shiro.hasPermission name="system:user:grant"><button class="btn btn-info btn-xs" type="button" onclick="checkPass(\''+row.id+'\')"><i class="fa fa-arrows"></i>&nbsp;审核通过</button></@shiro.hasPermission>';
+                    	if (row.checkCode == '2'){
+                            operateHtml = operateHtml + '<@shiro.hasPermission name="system:user:deleteBatch"><button class="btn btn-danger btn-xs" type="button" onclick="del(\''+row.id+'\')"><i class="fa fa-remove"></i>&nbsp;删除</button> &nbsp;</@shiro.hasPermission>';
+                        }
+                    	if (row.checkCode == '1'){
+                            operateHtml = operateHtml + '<@shiro.hasPermission name="system:user:grant"><button class="btn btn-info btn-xs" type="button" onclick="checkPass(\''+row.id+'\')"><i class="fa fa-arrows"></i>&nbsp;审核通过</button></@shiro.hasPermission>';
+                        }
                         return operateHtml;
                     }
 			    }]

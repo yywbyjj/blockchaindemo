@@ -2,16 +2,12 @@ package net.sppan.base.service.impl;
 
 import java.util.*;
 
-import com.alibaba.fastjson.JSON;
-import net.sppan.base.common.utils.HttpClientResult;
-import net.sppan.base.common.utils.HttpClientUtils;
 import net.sppan.base.common.utils.MD5Utils;
 import net.sppan.base.common.utils.UuidUtils;
 import net.sppan.base.dao.IUserDao;
 import net.sppan.base.dao.support.IBaseDao;
 import net.sppan.base.entity.Role;
 import net.sppan.base.entity.User;
-import net.sppan.base.entity.enu.StateCode;
 import net.sppan.base.service.*;
 import net.sppan.base.service.support.impl.BaseServiceImpl;
 
@@ -59,6 +55,7 @@ public class UserServiceImpl extends BaseServiceImpl<User, String> implements IU
 		dbUser.setLocked(user.getLocked());
 		dbUser.setDescription(user.getDescription());
 		dbUser.setUpdateTime(new Date());
+		dbUser.setIdNumber(user.getIdNumber());
 		update(dbUser);
 	}
 
@@ -73,46 +70,11 @@ public class UserServiceImpl extends BaseServiceImpl<User, String> implements IU
 			user.setPassword(MD5Utils.md5("111111"));
 			userDao.save(user);
 			if (userDao.findOne(user.getId())==null){
-				throw new NoUserException("没有查到改用户的信息");
-			}
-			HttpClientResult result = saveBlockChainUser(user);
-			if (result.getCode()!= StateCode.SUCCESSCODE){
-				throw new NoClientBlockChainException("连接区块链错误");
+				throw new NoUserException("新增用户的信息失败");
 			}
 		}else {
 			updateUser(user);
-			HttpClientResult result = updateBlockChainUser(user);
-			if (result.getCode()!=StateCode.SUCCESSCODE){
-				throw new NoClientBlockChainException("连接区块链错误");
-			}
 		}
-	}
-
-	public HttpClientResult saveBlockChainUser(User user) throws Exception{
-		Map<String, String> params = getStringMap(user);
-		HttpClientResult result = HttpClientUtils.doPost("http://193.112.47.47:3000/api/Trader",params);
-		return result;
-	}
-
-	public HttpClientResult delBlockChainUser(String tradeId) throws Exception{
-		HttpClientResult result = HttpClientUtils.doDelete("http://193.112.47.47:3000/api/Trader/"+tradeId);
-		return result;
-	}
-
-	public HttpClientResult updateBlockChainUser(User user) throws Exception{
-		String id = user.getId();
-		Map<String, String> params = getStringMap(user);
-		HttpClientResult result = HttpClientUtils.doPut("http://193.112.47.47:3000/api/Trader/"+id, params);
-		return result;
-	}
-
-	private Map<String, String> getStringMap(User user) {
-		Map<String, String> params = new HashMap<>();
-		params.put("$class", "org.example.mynetwork.Trader");
-		params.put("tradeId", user.getId());
-		params.put("userName", user.getUserName());
-		params.put("nickName", user.getNickName());
-		return params;
 	}
 
 	@Override
@@ -121,10 +83,6 @@ public class UserServiceImpl extends BaseServiceImpl<User, String> implements IU
 		User user = find(id);
 		Assert.state(!"admin".equals(user.getUserName()),"超级管理员用户不能删除");
 		super.delete(id);
-		HttpClientResult result = delBlockChainUser(id);
-		if (result.getCode()!=StateCode.DELSUCCESSCODE){
-			throw new NoClientBlockChainException("连接区块链错误");
-		}
 	}
 
 	@Override

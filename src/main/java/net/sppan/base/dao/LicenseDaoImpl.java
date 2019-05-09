@@ -25,14 +25,16 @@ public class LicenseDaoImpl {
     public Page<LicenseDto> findAllLicense(List<String> names,String searchText,Pageable pageable){
         User user = (User) SecurityUtils.getSubject().getPrincipal();
         String sql = "select license.id,license_hash,orderer_name,main_exchange,user_id,photo_url,check_code," +
-                "is_delete,user_name from license left join tb_user on user_id = tb_user.id";
-        String countSql = "select count(*) from license left join tb_user on user_id = tb_user.id";
+                "is_delete,user_name from license left join tb_user on user_id = tb_user.id where is_delete='0'";
+        String countSql = "select count(*) from license left join tb_user on user_id = tb_user.id where is_delete='0'";
         if (!admin.equals(user.getId())&&!names.isEmpty()){
-            sql += " where orderer_name in ('" + StringUtils.join(names,"','") + "')";
+            sql += " and orderer_name in ('" + StringUtils.join(names,"','") + "')";
         }
         if (searchText!=null){
             sql += " and user_name like '" +searchText+ "%'";
         }
+        sql += " order by check_code asc ";
+        System.out.println(sql);
         Query query = entityManager.createNativeQuery(sql);
         Query countQuery = entityManager.createNativeQuery(countSql);
         //设置分页

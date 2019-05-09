@@ -80,9 +80,15 @@ public class LicenseController extends BaseController {
 
     @PostMapping(value = "/checkPass")
     @ResponseBody
-    public JsonResult checkPass(String id) throws Exception{
+    public JsonResult checkPass(String id){
         License license = licenseService.find(id);
-        licenseService.checkPassLicense(license);
+        try {
+            licenseService.checkPassLicense(license);
+        }catch (NoClientBlockChainException e){
+            return JsonResult.failure(e.getMessage());
+        }catch (Exception e){
+            return JsonResult.failure("未知的错误");
+        }
         return JsonResult.success();
     }
 
