@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <title> - 表单验证 jQuery Validation</title>
+    <title> - Form Validator</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
 
@@ -24,14 +24,11 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="ibox float-e-margins">
-                    <div class="ibox-title">
-                        <h5>资源编辑</h5>
-                    </div>
                     <div class="ibox-content">
                         <form class="form-horizontal m-t" id="frm" method="post" action="${ctx!}/admin/resource/edit">
                         	<input type="hidden" id="id" name="id" value="${resource.id}">
                             <div class="form-group">
-                               <label class="col-sm-3 control-label">上级资源：</label>
+                               <label class="col-sm-3 control-label">parentresource：</label>
                                 <div class="col-sm-8">
                                 	<select name="parent.id" class="form-control">
                                 		<#list list as r>
@@ -43,69 +40,69 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-3 control-label">资源名称：</label>
+                                <label class="col-sm-3 control-label">name：</label>
                                 <div class="col-sm-8">
                                     <input id="name" name="name" class="form-control" type="text" value="${resource.name}">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-3 control-label">唯一标识：</label>
+                                <label class="col-sm-3 control-label">sourceKey：</label>
                                 <div class="col-sm-8">
                                     <input id="sourceKey" name="sourceKey" class="form-control" type="text" value="${resource.sourceKey}">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-3 control-label">资源类型：</label>
+                                <label class="col-sm-3 control-label">type：</label>
                                 <div class="col-sm-8">
                                 	<select name="type" class="form-control">
-                                		<option value="0" <#if resource.type == 0>selected="selected"</#if>>目录</option>
-                                		<option value="1" <#if resource.type == 1>selected="selected"</#if>>菜单</option>
-                                		<option value="2" <#if resource.type == 2>selected="selected"</#if>>按钮</option>
+                                		<option value="0" <#if resource.type == 0>selected="selected"</#if>>catalog</option>
+                                		<option value="1" <#if resource.type == 1>selected="selected"</#if>>memu</option>
+                                		<option value="2" <#if resource.type == 2>selected="selected"</#if>>button</option>
                                 	</select>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-3 control-label">资源url：</label>
+                                <label class="col-sm-3 control-label">sourceUrl：</label>
                                 <div class="col-sm-8">
                                     <input id="sourceUrl" name="sourceUrl" class="form-control" value="${resource.sourceUrl}">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-3 control-label">层级：</label>
+                                <label class="col-sm-3 control-label">level：</label>
                                 <div class="col-sm-8">
                                     <input id="level" name="level" class="form-control" value="${resource.level}" placeholder="目录：1，菜单：2，按钮：3">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-3 control-label">排序：</label>
+                                <label class="col-sm-3 control-label">sort：</label>
                                 <div class="col-sm-8">
                                     <input id="sort" name="sort" class="form-control" value="${resource.sort}">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-3 control-label">图标：</label>
+                                <label class="col-sm-3 control-label">icon：</label>
                                 <div class="col-sm-8">
                                     <input id="icon" name="icon" class="form-control" value="${resource.icon}">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-3 control-label">状态：</label>
+                                <label class="col-sm-3 control-label">isHide：</label>
                                 <div class="col-sm-8">
                                 	<select name="isHide" class="form-control">
-                                		<option value="0" <#if resource.locked == 0>selected="selected"</#if>>显示</option>
-                                		<option value="1" <#if resource.locked == 1>selected="selected"</#if>>隐藏</option>
+                                		<option value="0" <#if resource.locked == 0>selected="selected"</#if>>show</option>
+                                		<option value="1" <#if resource.locked == 1>selected="selected"</#if>>hide</option>
                                 	</select>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-3 control-label">描述：</label>
+                                <label class="col-sm-3 control-label">description：</label>
                                 <div class="col-sm-8">
                                     <input id="description" name="description" class="form-control" value="${resource.description}">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="col-sm-8 col-sm-offset-3">
-                                    <button class="btn btn-primary" type="submit">提交</button>
+                                    <button class="btn btn-primary" type="submit">submit</button>
                                 </div>
                             </div>
                         </form>

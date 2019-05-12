@@ -29,12 +29,12 @@
             <div class="col-sm-12">
                 <div class="ibox ">
                     <div class="ibox-title">
-                        <h5>用户管理</h5>
+                        <h5>UserManage</h5>
                     </div>
                     <div class="ibox-content">
                         <p>
                         	<@shiro.hasPermission name="system:user:add">
-                        		<button class="btn btn-success " type="button" onclick="add();"><i class="fa fa-plus"></i>&nbsp;添加</button>
+                        		<button class="btn btn-success " type="button" onclick="add();"><i class="fa fa-plus"></i>&nbsp;add</button>
                         	</@shiro.hasPermission>
                         </p>
                         <hr>
@@ -116,10 +116,10 @@
 			        field: "id",
 			        sortable: true
 			    },{
-			        title: "用户名",
+			        title: "userName",
 			        field: "userName"
 			    },{
-			        title: "所属角色",
+			        title: "roles",
 			        field: "roles",
 			        formatter: function(value, row, index) {
                     	var r = "";
@@ -129,57 +129,57 @@
                     	return r;
                     }
 			    },{
-			        title: "昵称",
+			        title: "nickName",
 			        field: "nickName"
 			    },{
-			        title: "性别",
+			        title: "sex",
 			        field: "sex",
 			        formatter: function(value, row, index) {
                         if (value == '0') 
-                        	return '<span class="label label-warning">女</span>';
-                        return '<span class="label label-primary">男</span>';
+                        	return '<span class="label label-warning">woman</span>';
+                        return '<span class="label label-primary">man</span>';
                     }
 			    },{
-			        title: "出生日期",
+			        title: "birthday",
 			        field: "birthday"
 			    },{
-			        title: "电话",
+			        title: "telephone",
 			        field: "telephone"
 			    },{
-			        title: "邮箱",
+			        title: "email",
 			        field: "email"
 			    },{
-			        title: "状态",
+			        title: "deleteStatus",
 			        sortable: true,
 			        field: "deleteStatus",
                     formatter: function (value, row, index) {
                         if (value == '0') 
-                        	return '<span class="label label-info">未删除</span>';
-                        return '<span class="label label-danger">已删除</span>';
+                        	return '<span class="label label-info">undeleted</span>';
+                        return '<span class="label label-danger">deleted</span>';
                     }
 			    },{
-			        title: "锁定",
+			        title: "locked",
 			        field: "locked",
 			        formatter: function (value, row, index) {
                         if (value == '0') 
-                        	return '<span class="label label-info">未锁定</span>';
-                        return '<span class="label label-danger">已锁定</span>';
+                        	return '<span class="label label-info">unlocked</span>';
+                        return '<span class="label label-danger">locked</span>';
                     }
 			    },{
-			        title: "创建时间",
+			        title: "createTime",
 			        field: "createTime",
 			        sortable: true
 			    },{
-			        title: "更新时间",
+			        title: "updateTime",
 			        field: "updateTime",
 			        sortable: true
 			    },{
-			        title: "操作",
+			        title: "empty",
 			        field: "empty",
                     formatter: function (value, row, index) {
-                    	var operateHtml = '<@shiro.hasPermission name="system:user:edit"><button class="btn btn-primary btn-xs" type="button" onclick="edit(\''+row.id+'\')"><i class="fa fa-edit"></i>&nbsp;修改</button> &nbsp;</@shiro.hasPermission>';
-                    	operateHtml = operateHtml + '<@shiro.hasPermission name="system:user:deleteBatch"><button class="btn btn-danger btn-xs" type="button" onclick="del(\''+row.id+'\')"><i class="fa fa-remove"></i>&nbsp;删除</button> &nbsp;</@shiro.hasPermission>';
-                    	operateHtml = operateHtml + '<@shiro.hasPermission name="system:user:grant"><button class="btn btn-info btn-xs" type="button" onclick="grant(\''+row.id+'\')"><i class="fa fa-arrows"></i>&nbsp;关联角色</button></@shiro.hasPermission>';
+                    	var operateHtml = '<@shiro.hasPermission name="system:user:edit"><button class="btn btn-primary btn-xs" type="button" onclick="edit(\''+row.id+'\')"><i class="fa fa-edit"></i>&nbsp;edit</button> &nbsp;</@shiro.hasPermission>';
+                    	operateHtml = operateHtml + '<@shiro.hasPermission name="system:user:deleteBatch"><button class="btn btn-danger btn-xs" type="button" onclick="del(\''+row.id+'\')"><i class="fa fa-remove"></i>&nbsp;delete</button> &nbsp;</@shiro.hasPermission>';
+                    	operateHtml = operateHtml + '<@shiro.hasPermission name="system:user:grant"><button class="btn btn-info btn-xs" type="button" onclick="grant(\''+row.id+'\')"><i class="fa fa-arrows"></i>&nbsp;roles</button></@shiro.hasPermission>';
                         return operateHtml;
                     }
 			    }]
@@ -189,7 +189,7 @@
         function edit(id){
         	layer.open({
         	      type: 2,
-        	      title: '用户修改',
+        	      title: 'edit',
         	      shadeClose: true,
         	      shade: false,
         	      area: ['893px', '600px'],
@@ -202,7 +202,7 @@
         function add(){
         	layer.open({
         	      type: 2,
-        	      title: '用户添加',
+        	      title: 'add',
         	      shadeClose: true,
         	      shade: false,
         	      area: ['893px', '600px'],
@@ -215,7 +215,7 @@
         function grant(id){
         	layer.open({
         	      type: 2,
-        	      title: '关联角色',
+        	      title: 'roles',
         	      shadeClose: true,
         	      shade: false,
         	      area: ['893px', '600px'],
@@ -226,7 +226,7 @@
         	    });
         }
         function del(id){
-        	layer.confirm('确定删除吗?', {icon: 3, title:'提示'}, function(index){
+        	layer.confirm('Are you really want to delete this?', {icon: 3, title:'tips'}, function(index){
         		$.ajax({
     	    		   type: "POST",
     	    		   dataType: "json",
@@ -243,7 +243,7 @@
         
         function detailFormatter(index, row) {
 	        var html = [];
-	        html.push('<p><b>描述:</b> ' + row.description + '</p>');
+	        html.push('<p><b>description:</b> ' + row.description + '</p>');
 	        return html.join('');
 	    }
     </script>

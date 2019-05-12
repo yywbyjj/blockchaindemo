@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <title>业务列表</title>
+    <title>license list</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
 
@@ -29,7 +29,7 @@
             <div class="col-sm-12">
                 <div class="ibox ">
                     <div class="ibox-title">
-                        <h5>业务管理</h5>
+                        <h5>licensemanage</h5>
                     </div>
                     <div class="ibox-content">
                         <div class="row row-lg">
@@ -110,16 +110,16 @@
 			        field: "id",
 			        sortable: true
 			    },{
-                    title: "用户名",
+                    title: "userName",
                     field: "userName"
                 },{
-			        title: "证照Hash",
+			        title: "licenseHash",
 			        field: "licenseHash"
 			    },{
-			        title: "所属组织",
+			        title: "ordererName",
 			        field: "ordererName",
 			    },{
-			        title: "证照类型",
+			        title: "mainExchange",
 			        field: "mainExchange",
                     formatter: function (value) {
 			            if (value == '0'){
@@ -129,7 +129,7 @@
                         }
                     }
 			    },{
-			        title: "审核状态",
+			        title: "checkstatus",
 			        field: "checkCode",
                     formatter: function (value) {
 			            if (value == '0'){
@@ -145,24 +145,24 @@
                         }
                     }
 			    },{
-			        title: "状态",
+			        title: "isDelete",
 			        sortable: true,
 			        field: "isDelete",
                     formatter: function (value, row, index) {
                         if (value == '0') 
-                        	return '<span class="label label-info">未删除</span>';
-                        return '<span class="label label-danger">已删除</span>';
+                        	return '<span class="label label-info">undeleted</span>';
+                        return '<span class="label label-danger">deleted</span>';
                     }
 			    },{
-			        title: "操作",
+			        title: "empty",
 			        field: "empty",
                     formatter: function (value, row, index) {
-                    	var operateHtml = '<@shiro.hasPermission name="system:user:edit"><button class="btn btn-primary btn-xs" type="button" onclick="check(\''+row.id+'\')"><i class="fa fa-edit"></i>&nbsp;审核</button> &nbsp;</@shiro.hasPermission>';
+                    	var operateHtml = '<@shiro.hasPermission name="system:user:edit"><button class="btn btn-primary btn-xs" type="button" onclick="check(\''+row.id+'\')"><i class="fa fa-edit"></i>&nbsp;check</button> &nbsp;</@shiro.hasPermission>';
                     	if (row.checkCode == '2'){
-                            operateHtml = operateHtml + '<@shiro.hasPermission name="system:user:deleteBatch"><button class="btn btn-danger btn-xs" type="button" onclick="del(\''+row.id+'\')"><i class="fa fa-remove"></i>&nbsp;删除</button> &nbsp;</@shiro.hasPermission>';
+                            operateHtml = operateHtml + '<@shiro.hasPermission name="system:user:deleteBatch"><button class="btn btn-danger btn-xs" type="button" onclick="del(\''+row.id+'\')"><i class="fa fa-remove"></i>&nbsp;delete</button> &nbsp;</@shiro.hasPermission>';
                         }
                     	if (row.checkCode == '1'){
-                            operateHtml = operateHtml + '<@shiro.hasPermission name="system:user:grant"><button class="btn btn-info btn-xs" type="button" onclick="checkPass(\''+row.id+'\')"><i class="fa fa-arrows"></i>&nbsp;审核通过</button></@shiro.hasPermission>';
+                            operateHtml = operateHtml + '<@shiro.hasPermission name="system:user:grant"><button class="btn btn-info btn-xs" type="button" onclick="checkPass(\''+row.id+'\')"><i class="fa fa-arrows"></i>&nbsp;checkPass</button></@shiro.hasPermission>';
                         }
                         return operateHtml;
                     }
@@ -173,7 +173,7 @@
         function check(id){
         	layer.open({
         	      type: 2,
-        	      title: '证照审核',
+        	      title: 'check',
         	      shadeClose: true,
         	      shade: false,
         	      area: ['893px', '600px'],
@@ -185,7 +185,7 @@
         }
 
         function checkPass(id){
-        	layer.confirm('确定通过审核吗?这将会把数据同步到区块链中', {icon: 3, title:'提示'}, function(index){
+        	layer.confirm('Are you sure checking pass?', {icon: 3, title:'tip'}, function(index){
         		$.ajax({
     	    		   type: "POST",
     	    		   dataType: "json",
@@ -201,7 +201,7 @@
         }
 
         function del(id){
-            layer.confirm('确定删除吗?这将会把数据同步到区块链中', {icon: 3, title:'提示'}, function(index){
+            layer.confirm('Are you sure to delete?', {icon: 3, title:'提示'}, function(index){
                 $.ajax({
                     type: "POST",
                     dataType: "json",
@@ -218,7 +218,7 @@
         
         function detailFormatter(index, row) {
 	        var html = [];
-	        html.push('<p><b>描述:</b> ' + row.description + '</p>');
+	        html.push('<p><b>description:</b> ' + row.description + '</p>');
 	        return html.join('');
 	    }
     </script>

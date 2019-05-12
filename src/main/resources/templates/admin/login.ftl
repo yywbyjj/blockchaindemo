@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-    <title> - 登录</title>
+    <title> - login</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <link href="${ctx!}/assets/css/bootstrap.min.css" rel="stylesheet">
@@ -34,12 +34,11 @@
 	                </div>
                 </#if>
                 <form method="post" action="${ctx!}/admin/login" id="frm">
-                    <h4 class="no-margins">登录：</h4>
-                    <p class="m-t-md">登录到H+后台主题UI框架</p>
-                    <input type="text" class="form-control uname" name="username" id="username" placeholder="用户名" />
-                    <input type="password" class="form-control pword m-b" name="password" id="password"  placeholder="密码" />
-                    <a href="" class="forget">忘记密码了？</a>
-                    <button class="btn btn-success btn-block">登录</button>
+                    <h4 class="no-margins">login：</h4>
+                    <input type="text" class="form-control uname" name="username" id="username" placeholder="username" />
+                    <input type="password" class="form-control pword m-b" name="password" id="password"  placeholder="password" />
+                    <a href="" class="forget"> forgot password？</a>
+                    <button class="btn btn-success btn-block">login</button>
                 </form>
             </div>
         </div>
@@ -76,12 +75,12 @@
     	    },
     	    messages: {
     	      username: {
-    	        required: "请输入用户名",
-    	        minlength: "用户名必需由两个字母组成"
+    	        required: "Please input username",
+    	        minlength: "The username must consist of two letters"
     	      },
     	      password: {
-    	        required: "请输入密码",
-    	        minlength: "密码长度不能小于 6 个字母"
+    	        required: "Please input password",
+    	        minlength: "Password length cannot be less than 6 letters"
     	      }
     	    },
     	    submitHandler:function(form){

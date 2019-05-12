@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <title> - 表单验证 jQuery Validation</title>
+    <title> - Form Validator</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
 
@@ -24,42 +24,39 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="ibox float-e-margins">
-                    <div class="ibox-title">
-                        <h5>完整验证表单</h5>
-                    </div>
                     <div class="ibox-content">
                         <form class="form-horizontal m-t" id="frm" method="post" action="${ctx!}/admin/role/edit">
                         	<input type="hidden" id="id" name="id" value="${role.id}">
                             <div class="form-group">
-                                <label class="col-sm-3 control-label">角色key：</label>
+                                <label class="col-sm-3 control-label">roleKey：</label>
                                 <div class="col-sm-8">
                                     <input id="roleKey" name="roleKey" class="form-control" type="text" value="${role.roleKey}" <#if role?exists> readonly="readonly"</#if> >
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-3 control-label">联盟名称：</label>
+                                <label class="col-sm-3 control-label">name：</label>
                                 <div class="col-sm-8">
                                     <input id="name" name="name" class="form-control" type="text" value="${role.name}">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-3 control-label">状态：</label>
+                                <label class="col-sm-3 control-label">status：</label>
                                 <div class="col-sm-8">
                                 	<select name="status" class="form-control">
-                                		<option value="0" <#if role.status == 0>selected="selected"</#if>>正常</option>
-                                		<option value="1" <#if role.status == 1>selected="selected"</#if>>禁用</option>
+                                		<option value="0" <#if role.status == 0>selected="selected"</#if>>normal</option>
+                                		<option value="1" <#if role.status == 1>selected="selected"</#if>>disable</option>
                                 	</select>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-3 control-label">描述：</label>
+                                <label class="col-sm-3 control-label">description：</label>
                                 <div class="col-sm-8">
                                     <input id="description" name="description" class="form-control" value="${role.description}">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="col-sm-8 col-sm-offset-3">
-                                    <button class="btn btn-primary" type="submit">提交</button>
+                                    <button class="btn btn-primary" type="submit">submit</button>
                                 </div>
                             </div>
                         </form>

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <title> - 表单验证 jQuery Validation</title>
+    <title> - Form Validator</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
 
@@ -25,10 +25,10 @@
             <div class="col-sm-12">
                 <div class="ibox float-e-margins">
                     <div class="ibox-title">
-                        <h5>业务描述</h5>
+                        <h5>description</h5>
                     </div>
                     <div class="ibox-content">
-                        <p>为【${user.nickName}】分配角色</p>
+                        <p>for 【${user.nickName}】 allocating roles</p>
                     </div>
                 </div>
             </div>
@@ -37,7 +37,7 @@
             <div class="col-sm-12">
                 <div class="ibox float-e-margins">
                     <div class="ibox-title">
-                        <h5>选择角色</h5>
+                        <h5>select roles</h5>
                     </div>
                     <div class="ibox-content">
                         <form class="form-horizontal" id="frm" method="post">
@@ -59,7 +59,7 @@
                             </div>
                             <div class="form-group">
                                 <div class="col-sm-8 col-sm-offset-3">
-                                    <button class="btn btn-primary" type="submit">提交</button>
+                                    <button class="btn btn-primary" type="submit">submit</button>
                                 </div>
                             </div>
                         </form>

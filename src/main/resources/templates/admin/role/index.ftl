@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <title>角色列表</title>
+    <title>roleList</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
 
@@ -28,12 +28,12 @@
             <div class="col-sm-12">
                 <div class="ibox ">
                     <div class="ibox-title">
-                        <h5>角色管理</h5>
+                        <h5>rolemanage</h5>
                     </div>
                     <div class="ibox-content">
                         <p>
                         <@shiro.hasPermission name="system:role:add">
-                        	<button class="btn btn-success " type="button" onclick="add();"><i class="fa fa-plus"></i>&nbsp;添加</button>
+                        	<button class="btn btn-success " type="button" onclick="add();"><i class="fa fa-plus"></i>&nbsp;add</button>
                         </@shiro.hasPermission>
                         </p>
                         <hr>
@@ -116,34 +116,34 @@
 			        field: "id",
 			        sortable: true
 			    },{
-			        title: "联盟名称",
+			        title: "name",
 			        field: "name"
 			    },{
-			        title: "角色KEY",
+			        title: "roleKey",
 			        field: "roleKey"
 			    },{
-			        title: "状态",
+			        title: "status",
 			        field: "status",
 			        formatter: function(value,row,index){
 			        	if (value == '0') 
-                        	return '<span class="label label-primary">正常</span>';
-                        return '<span class="label label-danger">禁用</span>';
+                        	return '<span class="label label-primary">normal</span>';
+                        return '<span class="label label-danger">disable</span>';
 			        }
 			    },{
-			        title: "创建时间",
+			        title: "createTime",
 			        field: "createTime",
 			        sortable: true
 			    },{
-			        title: "更新时间",
+			        title: "updateTime",
 			        field: "updateTime",
 			        sortable: true
 			    },{
-			        title: "操作",
+			        title: "empty",
 			        field: "empty",
                     formatter: function (value, row, index) {
-                    	var operateHtml = '<@shiro.hasPermission name="system:role:edit"><button class="btn btn-primary btn-xs" type="button" onclick="edit(\''+row.id+'\')"><i class="fa fa-edit"></i>&nbsp;修改</button> &nbsp;</@shiro.hasPermission>';
-                    	operateHtml = operateHtml + '<@shiro.hasPermission name="system:role:deleteBatch"><button class="btn btn-danger btn-xs" type="button" onclick="del(\''+row.id+'\')"><i class="fa fa-remove"></i>&nbsp;删除</button> &nbsp;</@shiro.hasPermission>';
-                    	operateHtml = operateHtml + '<@shiro.hasPermission name="system:role:grant"><button class="btn btn-info btn-xs" type="button" onclick="grant(\''+row.id+'\')"><i class="fa fa-arrows"></i>&nbsp;分配资源</button></@shiro.hasPermission>';
+                    	var operateHtml = '<@shiro.hasPermission name="system:role:edit"><button class="btn btn-primary btn-xs" type="button" onclick="edit(\''+row.id+'\')"><i class="fa fa-edit"></i>&nbsp;edit</button> &nbsp;</@shiro.hasPermission>';
+                    	operateHtml = operateHtml + '<@shiro.hasPermission name="system:role:deleteBatch"><button class="btn btn-danger btn-xs" type="button" onclick="del(\''+row.id+'\')"><i class="fa fa-remove"></i>&nbsp;delete</button> &nbsp;</@shiro.hasPermission>';
+                    	operateHtml = operateHtml + '<@shiro.hasPermission name="system:role:grant"><button class="btn btn-info btn-xs" type="button" onclick="grant(\''+row.id+'\')"><i class="fa fa-arrows"></i>&nbsp;grant</button></@shiro.hasPermission>';
                         return operateHtml;
                     }
 			    }]
@@ -153,7 +153,7 @@
         function edit(id){
         	layer.open({
         	      type: 2,
-        	      title: '角色修改',
+        	      title: 'edit',
         	      shadeClose: true,
         	      shade: false,
         	      area: ['893px', '600px'],
@@ -166,7 +166,7 @@
         function add(){
         	layer.open({
         	      type: 2,
-        	      title: '用户添加',
+        	      title: 'add',
         	      shadeClose: true,
         	      shade: false,
         	      area: ['893px', '600px'],
@@ -179,7 +179,7 @@
         function grant(id){
         	layer.open({
         	      type: 2,
-        	      title: '分配资源',
+        	      title: 'grant',
         	      shadeClose: true,
         	      shade: false,
         	      area: ['893px', '600px'],
@@ -190,7 +190,7 @@
         	    });
         }
         function del(id){
-        	layer.confirm('确定删除吗?', {icon: 3, title:'提示'}, function(index){
+        	layer.confirm('Are you really want to delete this?', {icon: 3, title:'tip'}, function(index){
         		$.ajax({
     	    		   type: "POST",
     	    		   dataType: "json",
@@ -207,7 +207,7 @@
         
         function detailFormatter(index, row) {
 	        var html = [];
-	        html.push('<p><b>描述:</b> ' + row.description + '</p>');
+	        html.push('<p><b>description:</b> ' + row.description + '</p>');
 	        return html.join('');
 	    }
     </script>

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit">
 
-    <title> SPPanAdmin- 主页</title>
+    <title> SPPanAdmin- homepage</title>
 
     <meta name="keywords" content="">
     <meta name="description" content="">
@@ -45,39 +45,39 @@
                         </div>
                     </li>
                     <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
-                        <span class="ng-scope">分类</span>
+                        <span class="ng-scope">classification</span>
                     </li>
                     <li>
                         <a class="J_menuItem" href="${ctx!}/admin/welcome">
                             <i class="fa fa-home"></i>
-                            <span class="nav-label">主页</span>
+                            <span class="nav-label">homepage</span>
                         </a>
                     </li>
                     <li>
                         <a href="#">
                             <i class="fa fa fa-cog"></i>
-                            <span class="nav-label">系统管理</span>
+                            <span class="nav-label">manage</span>
                             <span class="fa arrow"></span>
                         </a>
                         <ul class="nav nav-second-level">
                          <@shiro.hasPermission name="system:user:index">
                             <li>
-                               <a class="J_menuItem" href="${ctx!}/admin/user/index">用户管理</a>
+                               <a class="J_menuItem" href="${ctx!}/admin/user/index">usermanage</a>
                             </li>
                          </@shiro.hasPermission>
                          <@shiro.hasPermission name="system:role:index">
                             <li>
-                                <a class="J_menuItem" href="${ctx!}/admin/role/index">联盟管理</a>
+                                <a class="J_menuItem" href="${ctx!}/admin/role/index">rolemanage</a>
                             </li>
                          </@shiro.hasPermission>
                          <@shiro.hasPermission name="system:resource:index">
                             <li>
-                                <a class="J_menuItem" href="${ctx!}/admin/resource/index">资源管理</a>
+                                <a class="J_menuItem" href="${ctx!}/admin/resource/index">resourcemanage</a>
                             </li>
                          </@shiro.hasPermission>
                          <@shiro.hasPermission name="system:license:index">
                             <li>
-                                <a class="J_menuItem" href="${ctx!}/admin/license/index">业务管理</a>
+                                <a class="J_menuItem" href="${ctx!}/admin/license/index">licensemanage</a>
                             </li>
                          </@shiro.hasPermission>
                         </ul>
@@ -102,7 +102,7 @@
                                 <li>
                                     <a href="${ctx!}/admin/logout">
                                         <div>
-                                            <i class="fa fa-remove"></i> 注销
+                                            <i class="fa fa-remove"></i> logout
                                             <span class="pull-right text-muted small"><@shiro.principal type="net.sppan.base.entity.User" property="userName"/></span>
                                         </div>
                                     </a>

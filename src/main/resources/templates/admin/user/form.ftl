@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <title> - 表单验证 jQuery Validation</title>
+    <title> - Form Validator</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
 
@@ -24,41 +24,38 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="ibox float-e-margins">
-                    <div class="ibox-title">
-                        <h5>完整验证表单</h5>
-                    </div>
                     <div class="ibox-content">
                         <form class="form-horizontal m-t" id="frm" method="post" action="${ctx!}/admin/user/edit">
                         	<input type="hidden" id="id" name="id" value="${user.id}">
                             <div class="form-group">
-                                <label class="col-sm-3 control-label">账户名：</label>
+                                <label class="col-sm-3 control-label">username：</label>
                                 <div class="col-sm-8">
                                     <input id="userName" name="userName" class="form-control" type="text" value="${user.userName}" <#if user?exists> readonly="readonly"</#if> >
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-3 control-label">昵称：</label>
+                                <label class="col-sm-3 control-label">nickname：</label>
                                 <div class="col-sm-8">
                                     <input id="nickName" name="nickName" class="form-control" type="text" value="${user.nickName}">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-3 control-label">性别：</label>
+                                <label class="col-sm-3 control-label">sex：</label>
                                 <div class="col-sm-8">
                                 	<select name="sex" class="form-control">
-                                		<option value="0" <#if user.sex == 0>selected="selected"</#if>>女</option>
-                                		<option value="1" <#if user.sex == 1>selected="selected"</#if>>男</option>
+                                		<option value="0" <#if user.sex == 0>selected="selected"</#if>>woman</option>
+                                		<option value="1" <#if user.sex == 1>selected="selected"</#if>>man</option>
                                 	</select>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-3 control-label">出生日期：</label>
+                                <label class="col-sm-3 control-label">birthday：</label>
                                 <div class="col-sm-8">
                                     <input id="birthday" name="birthday" readonly="readonly" class="laydate-icon form-control layer-date" value="${user.birthday}">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-3 control-label">电话：</label>
+                                <label class="col-sm-3 control-label">telephone：</label>
                                 <div class="col-sm-8">
                                     <input id="telephone" name="telephone" class="form-control" value="${user.telephone}">
                                 </div>
@@ -70,29 +67,29 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-3 control-label">地址：</label>
+                                <label class="col-sm-3 control-label">address：</label>
                                 <div class="col-sm-8">
                                     <input id="address" name="address" class="form-control" value="${user.address}">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-3 control-label">状态：</label>
+                                <label class="col-sm-3 control-label">locked：</label>
                                 <div class="col-sm-8">
                                 	<select name="locked" class="form-control">
-                                		<option value="0" <#if user.locked == 0>selected="selected"</#if>>未锁定</option>
-                                		<option value="1" <#if user.locked == 1>selected="selected"</#if>>锁定</option>
+                                		<option value="0" <#if user.locked == 0>selected="selected"</#if>>unlocked</option>
+                                		<option value="1" <#if user.locked == 1>selected="selected"</#if>>locked</option>
                                 	</select>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-3 control-label">描述：</label>
+                                <label class="col-sm-3 control-label">description：</label>
                                 <div class="col-sm-8">
                                     <input id="description" name="description" class="form-control" value="${user.description}">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="col-sm-8 col-sm-offset-3">
-                                    <button class="btn btn-primary" type="submit">提交</button>
+                                    <button class="btn btn-primary" type="submit">submit</button>
                                 </div>
                             </div>
                         </form>

@@ -118,13 +118,18 @@
 	<div id="search">
 		<label for="search"></label>
 		<input id="searchText" type="text">
-		<input id="searchLicense" class="button" type="submit" value="Search">
+		<input id="searchLicense" class="button" type="submit" value="Search" onclick="searchLicense()">
 	</div>
+</div>
+<div class="container">
+	<a href="${url}" target="_blank">results</a>
 </div>
 <div style="text-align:center;margin:100px 0; font:normal 14px/24px 'MicroSoft YaHei';"></div>
 
 <script type="text/javascript">
-
+	function searchLicense() {
+		
+	}
 </script>
 </body>
 </html>

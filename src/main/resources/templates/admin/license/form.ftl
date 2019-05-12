@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <title> - 表单验证 jQuery Validation</title>
+    <title> - Form Validator</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
 
@@ -24,40 +24,37 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="ibox float-e-margins">
-                    <div class="ibox-title">
-                        <h5>业务审核</h5>
-                    </div>
                     <div class="ibox-content">
                         <form class="form-horizontal m-t" id="frm" method="post" action="${ctx!}/admin/license/checking">
                         	<input type="hidden" id="id" name="id" value="${license.id}">
                             <div class="form-group">
-                                <label class="col-sm-3 control-label">账户名：</label>
+                                <label class="col-sm-3 control-label">userName：</label>
                                 <div class="col-sm-8">
                                     <input id="userName" name="userName" class="form-control" type="text" value="${user.userName}" <#if user?exists> readonly="readonly"</#if> >
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-3 control-label">昵称：</label>
+                                <label class="col-sm-3 control-label">nickName：</label>
                                 <div class="col-sm-8">
                                     <input id="nickName" name="nickName" class="form-control" type="text" value="${user.nickName}" readonly="readonly">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-3 control-label">性别：</label>
+                                <label class="col-sm-3 control-label">sex：</label>
                                 <div class="col-sm-8">
                                     <input id="sex" name="sex" class="form-control" type="text"
-                                           <#if user.sex == 0>value="女"</#if>
-                                           <#if user.sex == 1>value="男"</#if> readonly="readonly">
+                                           <#if user.sex == 0>value="woman"</#if>
+                                           <#if user.sex == 1>value="man"</#if> readonly="readonly">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-3 control-label">出生日期：</label>
+                                <label class="col-sm-3 control-label">birthday：</label>
                                 <div class="col-sm-8">
                                     <input id="birthday" name="birthday" readonly="readonly" class="form-control" value="${user.birthday}">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-3 control-label">电话：</label>
+                                <label class="col-sm-3 control-label">telephone：</label>
                                 <div class="col-sm-8">
                                     <input id="telephone" name="telephone" class="form-control" value="${user.telephone}" readonly="readonly">
                                 </div>
@@ -69,18 +66,18 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-3 control-label">地址：</label>
+                                <label class="col-sm-3 control-label">address：</label>
                                 <div class="col-sm-8">
                                     <input id="address" name="address" class="form-control" value="${user.address}" readonly="readonly">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-3 control-label">用户凭证：</label>
-                                <a href="${ctx!}/assets/img/1.png" target="_blank">用户凭证一</a>
+                                <label class="col-sm-3 control-label">User Credentials：</label>
+                                <a href="${ctx!}/assets/img/1.png" target="_blank">Credentials</a>
                             </div>
                             <div class="form-group">
                                 <div class="col-sm-8 col-sm-offset-3">
-                                    <button class="btn btn-primary" type="submit">初步审核</button>
+                                    <button class="btn btn-primary" type="submit">submit</button>
                                 </div>
                             </div>
                         </form>
