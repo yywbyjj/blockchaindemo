@@ -121,14 +121,29 @@
 		<input id="searchLicense" class="button" type="submit" value="Search" onclick="searchLicense()">
 	</div>
 </div>
-<div class="container">
-	<a href="${url}" target="_blank">results</a>
-</div>
 <div style="text-align:center;margin:100px 0; font:normal 14px/24px 'MicroSoft YaHei';"></div>
+
+<script src="${ctx!}/assets/js/jquery.min.js?v=2.1.4"></script>
+<script src="${ctx!}/assets/js/bootstrap.min.js?v=3.3.6"></script>
+<script src="${ctx!}/assets/js/plugins/layer/layer.min.js"></script>
 
 <script type="text/javascript">
 	function searchLicense() {
-		
+		var idNumber = $("#searchText").val();
+		$.ajax({
+			type: "POST",
+			dataType: "json",
+			url: "${ctx!}/admin/license/search?idNumber="+idNumber,
+			success: function(res){
+				for (var i = 0;i<res.data.length;i++){
+					$("#search").append('<div class="container">\n' +
+							'\t<a id="url" target="_blank">result'+i+'</a>\n' +
+							'</div>')
+					$("#url").prop("href",res.data[i]);
+				}
+				layer.msg("查询成功");
+			}
+		});
 	}
 </script>
 </body>

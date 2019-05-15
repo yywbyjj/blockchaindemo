@@ -42,6 +42,8 @@ public class MD5Utils {
 	
 	public static void main(String[] args) {
 		System.out.println(md5("111111"));;
+		System.out.println(PWD.encodeIfNot("111111"));
+		System.out.println(PWD.decode("DGFD8AYHT9APF5PTTRJRM6WEJNU8FDFDD5HDL847GUTZYQBYL6WK5WEU5FDFDFFQ"));
 	}
 	
 }

@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSON;
 import net.sppan.base.common.utils.HttpClientResult;
 import net.sppan.base.common.utils.HttpClientUtils;
 import net.sppan.base.common.utils.MD5Utils;
+import net.sppan.base.common.utils.PWD;
 import net.sppan.base.dao.IUserDao;
 import net.sppan.base.dao.LicenseDao;
 import net.sppan.base.dao.support.IBaseDao;
@@ -48,7 +49,7 @@ public class LicenseServiceImpl extends BaseServiceImpl<License,String> implemen
     @Override
     @Transactional(rollbackFor = Exception.class)
     public void checkPassLicense(License license) throws Exception{
-        license.setLicenseHash(MD5Utils.md5(license.getPhotoUrl()));
+        license.setLicenseHash(license.getPhotoUrl());
         license.setCheckCode(LicenseCheckCode.CHECKED);
         licenseDao.save(license);
         String idCardNumber = userDao.findOne(license.getUserId()).getIdNumber();

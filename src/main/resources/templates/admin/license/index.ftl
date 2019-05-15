@@ -123,9 +123,9 @@
 			        field: "mainExchange",
                     formatter: function (value) {
 			            if (value == '0'){
-                            return '<span class="label label-info">身份证</span>';
+                            return '<span class="label label-info">Id Card</span>';
                         } else {
-                            return '<span class="label label-danger">错误状态码</span>';
+                            return '<span class="label label-danger">error status</span>';
                         }
                     }
 			    },{
@@ -133,15 +133,15 @@
 			        field: "checkCode",
                     formatter: function (value) {
 			            if (value == '0'){
-                            return '<span class="label label-danger">未审核</span>';
+                            return '<span class="label label-danger">unchecked</span>';
                         } else if (value == '1'){
-                            return '<span class="label label-info">审核中</span>';
+                            return '<span class="label label-info">checking</span>';
                         } else if (value == '2'){
-                            return '<span class="label label-info">已审核</span>';
+                            return '<span class="label label-info">unchecked</span>';
                         } else if (value == '3'){
-                            return '<span class="label label-danger">审核失败</span>';
+                            return '<span class="label label-danger">failure</span>';
                         } else {
-                            return '<span class="label label-danger">错误状态码</span>';
+                            return '<span class="label label-danger">error status</span>';
                         }
                     }
 			    },{

@@ -55,6 +55,12 @@
                                 </div>
                             </div>
                             <div class="form-group">
+                                <label class="col-sm-3 control-label">idNumber：</label>
+                                <div class="col-sm-8">
+                                    <input id="idNumber" name="idNumber" class="form-control" value="${user.idNumber}">
+                                </div>
+                            </div>
+                            <div class="form-group">
                                 <label class="col-sm-3 control-label">telephone：</label>
                                 <div class="col-sm-8">
                                     <input id="telephone" name="telephone" class="form-control" value="${user.telephone}">
